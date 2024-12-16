@@ -54,29 +54,6 @@
   margin-top: 20px;
 }
 
-.lesson {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px;
-  background-color: #fff;
-  border: 2px solid #eaeaea;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  font-size: 16px;
-  align-items: center;
-}
-
-.lesson .bi {
-  color: var(--primary-color);
-  margin-right: 10px;
-}
-
-.lesson span {
-  color: var(--dark-color);
-  font-weight: 700;
-}
-
 .course-summary {
   flex: 1;
   text-align: center;
@@ -99,21 +76,6 @@
   color: #ff5722;
 }
 
-.register-btn {
-  background-color: #007bff;
-  color: white;
-  font-size: 18px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-.register-btn:hover {
-  background-color: #0056b3;
-}
-
 .course-details {
   list-style: none;
   padding: 0;
@@ -125,9 +87,77 @@
   text-align: left;
 }
 
-.toggle-symbol {
-  font-size: 18px;
-  color: #ff5722;
-  margin-right: 10px;
+.course-content h2 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
+.course-content p {
+  color: #555;
+  margin: 10px 0;
+}
+
+.expand-all {
+  color: #ff5722;
+  cursor: pointer;
+  user-select: none;
+  float: right;
+  font-size: 14px;
+}
+
+.chapter {
+  border: 1.8px solid #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.chapter-header {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+}
+
+.chapter-header:hover {
+  background-color: #e0e0e0;
+}
+
+.chapter-title {
+  user-select: none; 
+}
+
+.toggle-symbol {
+  color: #ff5722;
+  font-size: 18px;
+  margin-right: 10px;
+  user-select: none;
+}
+
+.lesson-content {
+  display: none;
+}
+
+.lesson-content p {
+  font-size: 14px;
+  color: var(--dark-color);
+  margin: 0 15px;
+  margin-top: 10px;
+  line-height: 2;
+  font-weight: 500;
+  font-family: var(--body-font-family);
+}
+
+.lesson-content span {
+  font-weight: 700;
+}
+
+.lesson-content li {
+  line-height: 1.8;
+  margin-left: 15px;
+  margin-top: 5px;
+  list-style: disc;
+  font-family: var(--body-font-family);
+}

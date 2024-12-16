@@ -99,27 +99,77 @@
                             <li><i class="bi bi-check-lg"></i> Basic models and architectures when implementing transactions</li>
                             <li><i class="bi bi-check-lg"></i> Understanding more about effective trading methods and mindset</li>
                         </ul>
-                        <h3>Lesson contents</h3>
-                        <p>4 parts</p>
-                        <div class="course-content">
-                            <div class="lesson">
-                                <span>1. The right mindset for trading</span>
+                        <section class="course-content">
+                            <h3>Lesson contents</h3>
+                            <p>3 parts <span class="expand-all" onclick="toggleAll()">Expand All</span></p>
+                          
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">1. THE RIGHT MINDSET FOR TRADING</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p>- Many people step into trading with thoughts like: making easy money, getting rich quickly, and even quitting their regular jobs to trade full-time.
+                                    <p>- This is a <span>serious misconception</span>.</p>
+                                    <p>- In trading (and investing), there are two fundamental truths you need to understand: 
+                                        <span>PROFITS ALWAYS COME WITH RISKS.</span>
+                                    </p>
+                                    <p>- While everyone aims for profits and strives to minimize risks,
+                                        <span> there is no such thing as a 100% win rate.</span>
+                                    </p>
+                                    <p>- The best approach for traders is to focus on
+                                        <span>“increasing the probability of successful trades.”</span>
+                                    </p>
+                                    <p>- To achieve this, traders need:
+                                        <ol>
+                                            <li>A <span>clear trading plan</span>.</li>
+                                            <li>A <span>good trading system</span>.</li>
+                                            <li><span>Disciplined risk management.</span></li>
+                                            <li>A <span>strong and steady mindset</span>.</li>
+                                        </ol>
+                                    </p>
+                                    </p>
+                                </div>
                             </div>
-                            <div class="lesson">
-                                <span><i class="bi bi-plus toggle-symbol"></i> 2. Right mindset <span>
+                          
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">2. RIGHT MINDSET</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <ol>
+                                        <li><span>Learn solid knowledge </span>before starting.</li>
+                                        <li>Focus on <span>slow, steady earnings.</span></li>
+                                        <li>Avoid thinking about getting rich until you’ve gained enough experience.</li>
+                                        <li>Keep your regular job; trading should initially be a <span>side activity.</span></li>
+                                    </ol>
+                                </div>
                             </div>
-                            <div class="lesson">
-                                <span><i class="bi bi-plus"></i> 3. Wrong mindset <span>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                  <span class="toggle-symbol">+</span>
+                                  <span class="chapter-title">3. WRONG MINDSET</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <ol>
+                                        <li><span>Trading first, learning later.</span></li>
+                                        <li>Aiming for <span>quick money</span> (leading to high risks and account blowouts).</li>
+                                        <li>Rushing into the market <span>without a plan.</span></li>
+                                        <li>Quitting all other jobs to trade full-time too early.</li>
+                                    </ol>
+                                </div>
                             </div>
-                        </div>
+                        </section>
+                          
                     </div>
                 
                     <!-- Right Section -->
                     <div class="course-summary">
-                    <div class="illu-image" >
                         <div class="video-preview" style="background: linear-gradient(135deg, #ff7e5f, #feb47b);">
-                        <span>Mindset about trading</span>
-                    </div>
+                            <span>Mindset about trading</span>
+                        </div>
                     <h2>Free</h2>
                     <ul class="course-details">
                         <li>🎓 Trình độ cơ bản</li>
@@ -187,5 +237,44 @@
         <script src="js/slick.min.js"></script>
         <script src="js/custom.js"></script>
 
+        <script>
+            // OPEN LESSONS
+            function toggleChapter(element) {
+                const lessonContent= element.nextElementSibling;
+                const toggleSymbol = element.querySelector('.toggle-symbol');
+              
+                if (lessonContent.style.display === "none" || !lessonContent.style.display) {
+                  lessonContent.style.display = "block";
+                  toggleSymbol.textContent = "-";
+                } else {
+                  lessonContent.style.display = "none";
+                  toggleSymbol.textContent = "+";
+                }
+              }
+              
+              function toggleAll() {
+                const chapters = document.querySelectorAll('.chapter');
+                const expandAllButton = document.querySelector('.expand-all');
+              
+                chapters.forEach((chapter) => {
+                  const lessonContent = chapter.querySelector('.lesson-content');
+                  const toggleSymbol = chapter.querySelector('.toggle-symbol');
+              
+                  if (expandAllButton.textContent === "Expand All") {
+                    lessonContent.style.display = "block";
+                    toggleSymbol.textContent = "-";
+                  } else {
+                    lessonContent.style.display = "none";
+                    toggleSymbol.textContent = "+";
+                  }
+                });
+              
+                expandAllButton.textContent =
+                  expandAllButton.textContent === "Expand All"
+                    ? "Close all"
+                    : "Expand All";
+              }
+              
+        </script>
     </body>
 </html>
