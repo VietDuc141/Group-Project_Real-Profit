@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Lesson1 Page</title>
+        <title>Lesson6 Page</title>
 
         <!-- CSS FILES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,6 @@
         <link rel="stylesheet" href="css/responsive.css"/>
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/lesson.css">
-        <link rel="stylesheet" href="css/mcq.css">
         <link href="css/main.css" rel="stylesheet">
         
 
@@ -87,12 +86,12 @@
                 </div>
             </nav>
 
-            <div class="course-overview">
+            <section class="course-overview">
                 <div class="course-container">
                     <!-- Left Section -->
                     <div class="course-info">
-                        <h1>Lesson 1 </h1>
-                        <p>Mindset about trading</p>
+                        <h1>Lesson 6 </h1>
+                        <p>Fibonacci Retracement and Extension</p>
                         <h3>What will you get ?</h3>
                         <ul class="course-benefits">
                             <li><i class="bi bi-check-lg"></i> Basic knowledge, foundation of Trading industry</li>
@@ -102,100 +101,92 @@
                         </ul>
                         <section class="course-content">
                             <h3>Lesson contents</h3>
-                            <p>3 parts <span class="expand-all" onclick="toggleAll()">Expand All</span></p>
+                            <p>2 parts <span class="expand-all" onclick="toggleAll()">Expand All</span></p>
                           
                             <div class="chapter">
                                 <div class="chapter-header" onclick="toggleChapter(this)">
                                     <span class="toggle-symbol">+</span>
-                                    <span class="chapter-title">1. THE RIGHT MINDSET FOR TRADING.</span>
+                                    <span class="chapter-title">1. Definition.</span>
                                 </div>
                                 <div class="lesson-content">
-                                    <p>- Many people step into trading with thoughts like: making easy money, getting rich quickly, and even quitting their regular jobs to trade full-time.
-                                    <p>- This is a <span>serious misconception</span>.</p>
-                                    <p>- In trading (and investing), there are two fundamental truths you need to understand: 
-                                        <span>PROFITS ALWAYS COME WITH RISKS.</span>
+                                    <p><span>* DEFINITION:</span></p>
+                                    <p>- The Fibonacci indicator was first introduced to the West in 
+                                        the 13th century by Leonardo Pisano Bogollo, an Italian mathematician.
                                     </p>
-                                    <p>- While everyone aims for profits and strives to minimize risks,
-                                        <span> there is no such thing as a 100% win rate.</span>
+                                    <p>- This sequence exhibits mathematical properties and ratios found in nature, such as in architecture and biology. 
+                                        Because Fibonacci appears universally throughout the universe, it is also present in financial markets.
                                     </p>
-                                    <p>- The best approach for traders is to focus on
-                                        <span>“increasing the probability of successful trades.”</span>
+                                    <p>- This is one of the reasons traders use the Fibonacci sequence in stocks, Forex, and Crypto to 
+                                        identify reversal points, set profit targets, and execute Fibonacci-based trading strategies.
                                     </p>
-                                    <p>- To achieve this, traders need:
-                                        <ul>
-                                            <li>A <span>clear trading plan</span>.</li>
-                                            <li>A <span>good trading system</span>.</li>
-                                            <li><span>Disciplined risk management.</span></li>
-                                            <li>A <span>strong and steady mindset</span>.</li>
-                                        </ul>
-                                    </p>
-                                    </p>
+                                    <p><span>* There are two main Fibonacci tools that traders commonly use in trading:</span></p>
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Purpose:</span>
+                                                To identify retracement levels of a trend. Based on personal experience, 
+                                                the key levels to focus on are <span>0.5 and 0.168.</span>
+                                            </p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Purpose:</span>
+                                                To find profit-taking points. The key levels to pay attention to are <span>0.5, 1, and 1.618.</span>
+                                            </p>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                           
                             <div class="chapter">
                                 <div class="chapter-header" onclick="toggleChapter(this)">
                                     <span class="toggle-symbol">+</span>
-                                    <span class="chapter-title">2. Right mindset.</span>
+                                    <span class="chapter-title">2. HOW TO DRAW FIBONACCI RETRACEMENT ?</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li><span>Learn solid knowledge </span>before starting.</li>
-                                        <li>Focus on <span>slow, steady earnings.</span></li>
-                                        <li>Avoid thinking about getting rich until you’ve gained enough experience.</li>
-                                        <li>Keep your regular job; trading should initially be a <span>side activity.</span></li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>For an Uptrend:</span></p>
+                                            <p>- After the completion of an upward wave, a downward wave (correction wave) begins. 
+                                                Use the Fibonacci Retracement tool to draw from the <span>Bottom</span> of the wave 
+                                                to the <span>Top</span> of the previous upward wave.
+                                            </p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>For a Downtrend:</span></p>
+                                            <p>- Reverse the process. Draw the Fibonacci Retracement from the <span>Top</span> of the wave to the 
+                                                <span>Bottom</span> of the previous downward wave.
+                                            </p>
+                                        </li>
                                     </ul>
-                                </div>
-                            </div>
 
-                            <div class="chapter">
-                                <div class="chapter-header" onclick="toggleChapter(this)">
-                                  <span class="toggle-symbol">+</span>
-                                  <span class="chapter-title">3. Wrong mindset.</span>
-                                </div>
-                                <div class="lesson-content">
+                                    <p><span>* UPWARD TREND:</span> To draw Fibonacci Retracement in an upward trend, connect three points:</p>
                                     <ul>
-                                        <li><span>Trading first, learning later.</span></li>
-                                        <li>Aiming for <span>quick money</span> (leading to high risks and account blowouts).</li>
-                                        <li>Rushing into the market <span>without a plan.</span></li>
-                                        <li>Quitting all other jobs to trade full-time too early.</li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Point 1:</span> The bottom of the upward wave (start of the wave).</p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Point 2:</span> The top of the upward wave (end of the wave).</p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Point 3:</span> The bottom of the retracement wave (start of the correction).</p>
+                                        </li>
+                                    </ul>
+
+                                    <p><span>* DOWNWARD TREND:</span> For a downward trend, follow the opposite approach:</p>
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Point 1:</span> The top of the downward wave (start of the wave).</p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Point 2:</span> The bottom of the downward wave (end of the wave).</p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Point 3:</span> The top of the retracement wave (start of the correction).</p>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
-
-                            <div id="quiz">
-                                <h1>Sử dụng cú pháp "shorthand" cho background</h1>
-                                <div class="question" id="question1">
-                                    <p><strong>1. Sử dụng cách viết 'shorthand' khi CSS thuộc tính background.</strong></p>
-                                    <ul class="options">
-                                        <li><label><input type="radio" name="q1" onclick="checkAnswer(this, 'correct', 1)"> background: url(image.png) center / contain no-repeat</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q1" onclick="checkAnswer(this, 'wrong', 1)"> background: url(image.png) no-repeat center contain</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q1" onclick="checkAnswer(this, 'wrong', 1)"> background: url(image.png) center contain no-repeat</label><span class="feedback"></span></li>
-                                    </ul>
-                                </div>
-                        
-                                <div class="question" id="question2">
-                                    <p><strong>2. Thuộc tính nào dùng để căn chỉnh văn bản?</strong></p>
-                                    <ul class="options">
-                                        <li><label><input type="radio" name="q2" onclick="checkAnswer(this, 'wrong', 2)"> color</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q2" onclick="checkAnswer(this, 'correct', 2)"> text-align</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q2" onclick="checkAnswer(this, 'wrong', 2)"> font-size</label><span class="feedback"></span></li>
-                                    </ul>
-                                </div>
-                        
-                                <div class="question" id="question3">
-                                    <p><strong>3. Thuộc tính CSS nào dùng để thay đổi kích thước font chữ?</strong></p>
-                                    <ul class="options">
-                                        <li><label><input type="radio" name="q3" onclick="checkAnswer(this, 'correct', 3)"> font-size</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q3" onclick="checkAnswer(this, 'wrong', 3)"> font-weight</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q3" onclick="checkAnswer(this, 'wrong', 3)"> font-style</label><span class="feedback"></span></li>
-                                    </ul>
-                                </div>
-                        
-                                <button class="finish-button" id="finishButton" onclick="finishQuiz()">Finish</button>
-                            </div>                                
                         </section>
-                        
+                          
                     </div>
                 
                     <!-- Right Section -->
@@ -205,14 +196,14 @@
                         </div>
                     <h2>Free</h2>
                     <ul class="course-details">
-                        <li><i class="bi bi-mortarboard-fill"></i> From new to pro</li>
-                        <li><i class="bi bi-journals"></i> Total: 11 lessons</li>
-                        <li><i class="bi bi-globe2"></i> Learn everytime - everywhere</li>
+                        <li>🎓 Trình độ cơ bản</li>
+                        <li>🎥 Tổng số 12 bài học</li>
+                        <li>🌐 Học mọi lúc, mọi nơi</li>
                     </ul>
                     </div>
                 </div>
-            </div>
-            
+                </section>
+                
             <footer class="site-footer">
                 <div class="container">
                     <div class="row">
@@ -269,5 +260,45 @@
         <script src="js/jQuery.headroom.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/custom.js"></script>
+
+        <script>
+            // OPEN LESSONS
+            function toggleChapter(element) {
+                const lessonContent= element.nextElementSibling;
+                const toggleSymbol = element.querySelector('.toggle-symbol');
+              
+                if (lessonContent.style.display === "none" || !lessonContent.style.display) {
+                  lessonContent.style.display = "block";
+                  toggleSymbol.textContent = "-";
+                } else {
+                  lessonContent.style.display = "none";
+                  toggleSymbol.textContent = "+";
+                }
+              }
+              
+              function toggleAll() {
+                const chapters = document.querySelectorAll('.chapter');
+                const expandAllButton = document.querySelector('.expand-all');
+              
+                chapters.forEach((chapter) => {
+                  const lessonContent = chapter.querySelector('.lesson-content');
+                  const toggleSymbol = chapter.querySelector('.toggle-symbol');
+              
+                  if (expandAllButton.textContent === "Expand All") {
+                    lessonContent.style.display = "block";
+                    toggleSymbol.textContent = "-";
+                  } else {
+                    lessonContent.style.display = "none";
+                    toggleSymbol.textContent = "+";
+                  }
+                });
+              
+                expandAllButton.textContent =
+                  expandAllButton.textContent === "Expand All"
+                    ? "Close all"
+                    : "Expand All";
+              }
+              
+        </script>
     </body>
 </html>

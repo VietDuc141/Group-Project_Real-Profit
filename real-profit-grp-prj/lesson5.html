@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Lesson5 Page</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/lesson.css">
+        <link href="css/main.css" rel="stylesheet">
+        
+
+    </head>
+
+    <body>
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <strong><span>Real</span> Profit</strong>
+                    </a>
+
+                    <div class="d-lg-none">
+                        <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="learning.html">Learning</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="practice.html">Practice</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="news.html">News</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="faqs.html">FAQs</a>
+                            </li>
+                        </ul>
+
+                        <div class="d-none d-lg-block">
+                            <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="course-overview">
+                <div class="course-container">
+                    <!-- Left Section -->
+                    <div class="course-info">
+                        <h1>Lesson 5 </h1>
+                        <p>Basic Cases Determining Trend Reversal</p>
+                        <h3>What will you get ?</h3>
+                        <ul class="course-benefits">
+                            <li><i class="bi bi-check-lg"></i> Basic knowledge, foundation of Trading industry</li>
+                            <li><i class="bi bi-check-lg"></i> Core concepts and terms when implementing transactions</li>
+                            <li><i class="bi bi-check-lg"></i> Basic models and architectures when implementing transactions</li>
+                            <li><i class="bi bi-check-lg"></i> Understanding more about effective trading methods and mindset</li>
+                        </ul>
+                        <section class="course-content">
+                            <h3>Lesson contents</h3>
+                            <p>4 parts <span class="expand-all" onclick="toggleAll()">Expand All</span></p>
+                          
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">Case 1: Formation of a Double Bottom</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p><span>* Formation of Bottoms :</span></p>
+                                    <ul>
+                                        <li>The price creates a <span>bottom</span> 
+                                            and enters a correction zone to form a new peak <span>(g)</span> 
+                                            that is <span>lower than the previous peak.</span>
+                                        </li>
+                                        <li>
+                                            Following the peak, the price declines again, forming a new <span>bottom</span> 
+                                            that is <span>lower than the previous bottom</span> in terms of the lowest price
+                                        </li>
+                                        <li>
+                                            However, the <span>closing price of bottom</span> is <span>higher than the lowest price of bottom,</span> 
+                                            signaling potential support.
+                                        </li>
+                                    </ul>
+                                    <p><span>* Double Bottom Pattern as a Reversal Signal:</span></p>
+                                    <ul>
+                                        <li>This price action forms a <span>double bottom pattern,</span> 
+                                            which indicates that a trend reversal from bearish to bullish has likely completed.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                          
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">Case 2: Breakout and Confirmation.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p><span>* Price Breaks the Peak:</span></p>
+                                    <ul>
+                                        <li>
+                                            Wait for the price to break through the <span>peak</span> 
+                                            and form a new <span>peak</span> that confirms the bullish trend.
+                                        </li>
+                                    </ul>
+                                    <p><span>* Correction to Bottom:</span></p>
+                                    <ul>
+                                        <li>
+                                            After forming the <span>new peak,</span> the price corrects downward to create a <span>bottom.</span>
+                                        </li>
+                                    </ul>
+                                    <p><span>* Entry Point (Long Position):</span></p>
+                                    <ul>
+                                        <li>
+                                            Place a <span>Long entry</span> at <span>bottom,</span> assuming the bullish 
+                                            trend will continue after this correction.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                  <span class="toggle-symbol">+</span>
+                                  <span class="chapter-title" style="color: red;">3. Key Notes</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Confirmation of Trend Reversal:</span></p>
+                                            <ul>
+                                                <li>The double bottom pattern combined with a breakout of the 
+                                                    intermediate peak provides strong confirmation of the reversal.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Risk Management:</span></p>
+                                            <ul>
+                                                <li>Place a <span>stop loss</span> below bottom or bottom, depending on the structure and volatility.</li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Take Profit Strategy:</span></p>
+                                            <ul>
+                                                <li>Target levels can be set at the previous resistance zone or based on 
+                                                    Fibonacci extensions (e.g., 127.2% or 161.8%).
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Time Frame Relevance:</span></p>
+                                            <ul>
+                                                <li>Apply this strategy on your main trading time frame for better context and reliability.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">4. How to Determine the Reversal Trend</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p><span>* Key to Success.</span></p>
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>When is a Downward Trend (after an Upward Trend) Broken?</span></p>
+                                            <p>- A downward trend formed after an upward trend is <span>broken</span> when:</p>
+                                            <ul>
+                                                <li>
+                                                    The price breaks <span>above the highest peak</span> of the downward trend.
+                                                </li>
+                                                <li>
+                                                    The <span>closing price</span> remains consistently higher than the key resistance level 
+                                                    that previously acted as a cap for the downtrend.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>When is an Upward Trend (after a Downward Trend) Broken?</span></p>
+                                            <p>- An upward trend formed after a downward trend is <span>broken</span> when:</p>
+                                            <ul>
+                                                <li>
+                                                    The price <span>breaks below the lowest trough</span> of the upward trend.
+                                                </li>
+                                                <li>
+                                                    The <span>closing price</span> remains consistently lower than the key support level 
+                                                    that previously acted as a base for the uptrend.
+                                                </li>
+                                            </ul>
+                                        </li>                                       
+                                    </ul>
+
+                                    <p><span>* Concept of Reversal Trend.</span></p>
+                                    <p>- A <span>reversal trend</span> occurs when the market transitions from one trend to the opposite trend.</p>
+                                    <p>- Example:</p>
+                                    <ul>
+                                        <li>
+                                            <span>Upward Trend → Reverses to Downward Trend:</span>
+                                            <ul>
+                                                <li style="list-style: circle;">
+                                                    The <span>upward trend is broken</span> first, 
+                                                    followed by the <span>formation of a downward trend.</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <p><span>* Conditions for a Reversal Trend:</span></p>
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Necessary Condition (Breaking the Current Trend):</span></p>
+                                            <p>- The current trend must be broken:</p>
+                                            <ul>
+                                                <li>For an upward trend: Price breaks below the critical trough.</li>
+                                                <li>For a downward trend: Price breaks above the critical peak.</li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Sufficient Condition (Formation of Opposite Trend):</span></p>
+                                            <p>- A new, opposite trend must form:</p>
+                                            <ul>
+                                                <li>For a downward trend: A series of lower highs and lower lows.</li>
+                                                <li>For an upward trend: A series of higher highs and higher lows.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <p><span>* Key Principle:</span></p>
+                                    <p><span>Any condition occurring first is acceptable,</span> but for a trend 
+                                        reversal to be confirmed,<span>both conditions must occur:</span>
+                                    </p>
+                                    <ul>
+                                        <li>The current trend must be broken.</li>
+                                        <li>A new opposite trend must be established.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                          
+                    </div>
+                
+                    <!-- Right Section -->
+                    <div class="course-summary">
+                        <div class="video-preview" style="background: linear-gradient(135deg, #ff7e5f, #feb47b);">
+                            <span>Mindset about trading</span>
+                        </div>
+                    <h2>Free</h2>
+                    <ul class="course-details">
+                        <li>🎓 Trình độ cơ bản</li>
+                        <li>🎥 Tổng số 12 bài học</li>
+                        <li>🌐 Học mọi lúc, mọi nơi</li>
+                    </ul>
+                    </div>
+                </div>
+                </section>
+                
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-10 me-auto mb-4">
+                            <h4 class="text-white mb-3"><a href="index.html">Real </a> Profit</h4>
+                            <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>Real Profit</strong></p>
+                            <br>
+                            <p class="copyright-text">Designed by Group Profit</p>
+                        </div>
+
+                        <div class="col-lg-5 col-8">
+                            <h5 class="text-white mb-3">Sitemap</h5>
+
+                            <ul class="footer-menu d-flex flex-wrap">
+                                <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About</a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Products</a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy policy</a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">FAQs</a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-4">
+                            <h5 class="text-white mb-3">Social</h5>
+
+                            <ul class="social-icon">
+
+                                <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+
+                                <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+
+                                <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                                <li><a href="#" class="social-icon-link bi-skype"></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+            
+        
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+
+        <script>
+            // OPEN LESSONS
+            function toggleChapter(element) {
+                const lessonContent= element.nextElementSibling;
+                const toggleSymbol = element.querySelector('.toggle-symbol');
+              
+                if (lessonContent.style.display === "none" || !lessonContent.style.display) {
+                  lessonContent.style.display = "block";
+                  toggleSymbol.textContent = "-";
+                } else {
+                  lessonContent.style.display = "none";
+                  toggleSymbol.textContent = "+";
+                }
+              }
+              
+              function toggleAll() {
+                const chapters = document.querySelectorAll('.chapter');
+                const expandAllButton = document.querySelector('.expand-all');
+              
+                chapters.forEach((chapter) => {
+                  const lessonContent = chapter.querySelector('.lesson-content');
+                  const toggleSymbol = chapter.querySelector('.toggle-symbol');
+              
+                  if (expandAllButton.textContent === "Expand All") {
+                    lessonContent.style.display = "block";
+                    toggleSymbol.textContent = "-";
+                  } else {
+                    lessonContent.style.display = "none";
+                    toggleSymbol.textContent = "+";
+                  }
+                });
+              
+                expandAllButton.textContent =
+                  expandAllButton.textContent === "Expand All"
+                    ? "Close all"
+                    : "Expand All";
+              }
+              
+        </script>
+    </body>
+</html>

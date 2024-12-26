@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Lesson1 Page</title>
+        <title>Lesson7 Page</title>
 
         <!-- CSS FILES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,6 @@
         <link rel="stylesheet" href="css/responsive.css"/>
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/lesson.css">
-        <link rel="stylesheet" href="css/mcq.css">
         <link href="css/main.css" rel="stylesheet">
         
 
@@ -87,12 +86,12 @@
                 </div>
             </nav>
 
-            <div class="course-overview">
+            <section class="course-overview">
                 <div class="course-container">
                     <!-- Left Section -->
                     <div class="course-info">
-                        <h1>Lesson 1 </h1>
-                        <p>Mindset about trading</p>
+                        <h1>Lesson 7 </h1>
+                        <p>Exponential Moving Average (EMA)</p>
                         <h3>What will you get ?</h3>
                         <ul class="course-benefits">
                             <li><i class="bi bi-check-lg"></i> Basic knowledge, foundation of Trading industry</li>
@@ -102,100 +101,106 @@
                         </ul>
                         <section class="course-content">
                             <h3>Lesson contents</h3>
-                            <p>3 parts <span class="expand-all" onclick="toggleAll()">Expand All</span></p>
+                            <p>4 parts <span class="expand-all" onclick="toggleAll()">Expand All</span></p>
                           
                             <div class="chapter">
                                 <div class="chapter-header" onclick="toggleChapter(this)">
                                     <span class="toggle-symbol">+</span>
-                                    <span class="chapter-title">1. THE RIGHT MINDSET FOR TRADING.</span>
+                                    <span class="chapter-title">1. What is a Moving Average (MA) ?</span>
                                 </div>
                                 <div class="lesson-content">
-                                    <p>- Many people step into trading with thoughts like: making easy money, getting rich quickly, and even quitting their regular jobs to trade full-time.
-                                    <p>- This is a <span>serious misconception</span>.</p>
-                                    <p>- In trading (and investing), there are two fundamental truths you need to understand: 
-                                        <span>PROFITS ALWAYS COME WITH RISKS.</span>
+                                    <p>- The Moving Average (MA) is the simplest indicator in the entire system of 
+                                        indicators available in the market.
                                     </p>
-                                    <p>- While everyone aims for profits and strives to minimize risks,
-                                        <span> there is no such thing as a 100% win rate.</span>
+                                    <p>- However, it is also the most essential one, indispensable on a 
+                                        trader's chart because it reflects the price movements most clearly.
                                     </p>
-                                    <p>- The best approach for traders is to focus on
-                                        <span>“increasing the probability of successful trades.”</span>
+                                    <p>- MA, or Moving Average, is a technical analysis indicator used in 
+                                        financial markets such as stocks, forex, and cryptocurrencies.
                                     </p>
-                                    <p>- To achieve this, traders need:
-                                        <ul>
-                                            <li>A <span>clear trading plan</span>.</li>
-                                            <li>A <span>good trading system</span>.</li>
-                                            <li><span>Disciplined risk management.</span></li>
-                                            <li>A <span>strong and steady mindset</span>.</li>
-                                        </ul>
-                                    </p>
-                                    </p>
+                                    <p>- It represents the average value of prices over a specific period.</p>
+                                    <p>- The MA is considered a lagging indicator, and its primary function is to smooth price data.</p>
+                                    <p><span>- There are three commonly used types of MAs: MA, EMA, and SMA.</span></p>
+                                    <p>- Among these, EMA (Exponential Moving Average) is preferred because it reacts more quickly to market price changes.</p>
+
+                                    <p><span>* Steps to adjust the EMA settings:</span></p>
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p>Determine the desired time frame or period.</p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p>Configure the EMA indicator with the appropriate parameters based on your trading strategy.</p>
+                                        </li>
+                                    </ul>
+
+                                    <p><span>* How to Use the EMA (Exponential Moving Average)</span></p>
+                                    <p>There are many EMA parameters available, such as 25, 34, 50, 89, 100, 150, 200, etc. 
+                                        Personally, I use <span>EMA 89</span> and <span>EMA 200.</span></p>
                                 </div>
                             </div>
                           
                             <div class="chapter">
                                 <div class="chapter-header" onclick="toggleChapter(this)">
                                     <span class="toggle-symbol">+</span>
-                                    <span class="chapter-title">2. Right mindset.</span>
+                                    <span class="chapter-title">2. Identifying Market Trends with EMA.</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
-                                        <li><span>Learn solid knowledge </span>before starting.</li>
-                                        <li>Focus on <span>slow, steady earnings.</span></li>
-                                        <li>Avoid thinking about getting rich until you’ve gained enough experience.</li>
-                                        <li>Keep your regular job; trading should initially be a <span>side activity.</span></li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Uptrend:</span></p>
+                                            <ul>
+                                                <li>When the price is above both EMA 89 and EMA 200, the market is in an uptrend.</li>
+                                                <li>Focus only on <span>Long (Buy)</span> entries.</li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Downtrend:</span></p>
+                                            <ul>
+                                                <li>When the price is below both EMA 89 and EMA 200, the market is in a downtrend.</li>
+                                                <li>Focus only on <span>Short (Sell)</span> entries.</li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Sideways Market:</span></p>
+                                            <ul>
+                                                <li>When the price moves up and down across the EMAs, the market is sideways (consolidation).</li>
+                                                <li>It is advisable to stay out of the market during this phase.</li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
 
                             <div class="chapter">
                                 <div class="chapter-header" onclick="toggleChapter(this)">
-                                  <span class="toggle-symbol">+</span>
-                                  <span class="chapter-title">3. Wrong mindset.</span>
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">3. Using EMA for Entries.</span>
                                 </div>
                                 <div class="lesson-content">
+                                    <p>- In a trending market, the EMA is used to time entries:</p>
                                     <ul>
-                                        <li><span>Trading first, learning later.</span></li>
-                                        <li>Aiming for <span>quick money</span> (leading to high risks and account blowouts).</li>
-                                        <li>Rushing into the market <span>without a plan.</span></li>
-                                        <li>Quitting all other jobs to trade full-time too early.</li>
+                                        <li><span>Uptrend:</span> Wait for the price to retrace back to the two EMAs and then take a <span>Long</span> position.</li>
+                                        <li><span>Downtrend</span> Wait for the price to retrace back to the two EMAs and then take a <span>Short</span> position.</li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <div id="quiz">
-                                <h1>Sử dụng cú pháp "shorthand" cho background</h1>
-                                <div class="question" id="question1">
-                                    <p><strong>1. Sử dụng cách viết 'shorthand' khi CSS thuộc tính background.</strong></p>
-                                    <ul class="options">
-                                        <li><label><input type="radio" name="q1" onclick="checkAnswer(this, 'correct', 1)"> background: url(image.png) center / contain no-repeat</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q1" onclick="checkAnswer(this, 'wrong', 1)"> background: url(image.png) no-repeat center contain</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q1" onclick="checkAnswer(this, 'wrong', 1)"> background: url(image.png) center contain no-repeat</label><span class="feedback"></span></li>
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">4. EMA Crossovers for Trend Reversals.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p>- When EMA 89 crosses EMA 200, it indicates a <span>trend reversal.</span></p>
+                                    <ul>
+                                        <li><span>Bullish crossover</span> (EMA 89 crosses above EMA 200): Signals a potential uptrend.</li>
+                                        <li><span>Bearish crossover</span> (EMA 89 crosses below EMA 200): Signals a potential downtrend.</li>
                                     </ul>
                                 </div>
-                        
-                                <div class="question" id="question2">
-                                    <p><strong>2. Thuộc tính nào dùng để căn chỉnh văn bản?</strong></p>
-                                    <ul class="options">
-                                        <li><label><input type="radio" name="q2" onclick="checkAnswer(this, 'wrong', 2)"> color</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q2" onclick="checkAnswer(this, 'correct', 2)"> text-align</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q2" onclick="checkAnswer(this, 'wrong', 2)"> font-size</label><span class="feedback"></span></li>
-                                    </ul>
-                                </div>
-                        
-                                <div class="question" id="question3">
-                                    <p><strong>3. Thuộc tính CSS nào dùng để thay đổi kích thước font chữ?</strong></p>
-                                    <ul class="options">
-                                        <li><label><input type="radio" name="q3" onclick="checkAnswer(this, 'correct', 3)"> font-size</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q3" onclick="checkAnswer(this, 'wrong', 3)"> font-weight</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q3" onclick="checkAnswer(this, 'wrong', 3)"> font-style</label><span class="feedback"></span></li>
-                                    </ul>
-                                </div>
-                        
-                                <button class="finish-button" id="finishButton" onclick="finishQuiz()">Finish</button>
-                            </div>                                
+                            </div>    
+
                         </section>
-                        
+                          
                     </div>
                 
                     <!-- Right Section -->
@@ -205,14 +210,14 @@
                         </div>
                     <h2>Free</h2>
                     <ul class="course-details">
-                        <li><i class="bi bi-mortarboard-fill"></i> From new to pro</li>
-                        <li><i class="bi bi-journals"></i> Total: 11 lessons</li>
-                        <li><i class="bi bi-globe2"></i> Learn everytime - everywhere</li>
+                        <li>🎓 Trình độ cơ bản</li>
+                        <li>🎥 Tổng số 12 bài học</li>
+                        <li>🌐 Học mọi lúc, mọi nơi</li>
                     </ul>
                     </div>
                 </div>
-            </div>
-            
+                </section>
+                
             <footer class="site-footer">
                 <div class="container">
                     <div class="row">
@@ -269,5 +274,45 @@
         <script src="js/jQuery.headroom.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/custom.js"></script>
+
+        <script>
+            // OPEN LESSONS
+            function toggleChapter(element) {
+                const lessonContent= element.nextElementSibling;
+                const toggleSymbol = element.querySelector('.toggle-symbol');
+              
+                if (lessonContent.style.display === "none" || !lessonContent.style.display) {
+                  lessonContent.style.display = "block";
+                  toggleSymbol.textContent = "-";
+                } else {
+                  lessonContent.style.display = "none";
+                  toggleSymbol.textContent = "+";
+                }
+              }
+              
+              function toggleAll() {
+                const chapters = document.querySelectorAll('.chapter');
+                const expandAllButton = document.querySelector('.expand-all');
+              
+                chapters.forEach((chapter) => {
+                  const lessonContent = chapter.querySelector('.lesson-content');
+                  const toggleSymbol = chapter.querySelector('.toggle-symbol');
+              
+                  if (expandAllButton.textContent === "Expand All") {
+                    lessonContent.style.display = "block";
+                    toggleSymbol.textContent = "-";
+                  } else {
+                    lessonContent.style.display = "none";
+                    toggleSymbol.textContent = "+";
+                  }
+                });
+              
+                expandAllButton.textContent =
+                  expandAllButton.textContent === "Expand All"
+                    ? "Close all"
+                    : "Expand All";
+              }
+              
+        </script>
     </body>
 </html>

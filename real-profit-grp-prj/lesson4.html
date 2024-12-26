@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Lesson4 Page</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/lesson.css">
+        <link href="css/main.css" rel="stylesheet">
+        
+
+    </head>
+
+    <body>
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <strong><span>Real</span> Profit</strong>
+                    </a>
+
+                    <div class="d-lg-none">
+                        <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="learning.html">Learning</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="practice.html">Practice</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="news.html">News</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="faqs.html">FAQs</a>
+                            </li>
+                        </ul>
+
+                        <div class="d-none d-lg-block">
+                            <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="course-overview">
+                <div class="course-container">
+                    <!-- Left Section -->
+                    <div class="course-info">
+                        <h1>Lesson 4 </h1>
+                        <p>Trend</p>
+                        <h3>What will you get ?</h3>
+                        <ul class="course-benefits">
+                            <li><i class="bi bi-check-lg"></i> Basic knowledge, foundation of Trading industry</li>
+                            <li><i class="bi bi-check-lg"></i> Core concepts and terms when implementing transactions</li>
+                            <li><i class="bi bi-check-lg"></i> Basic models and architectures when implementing transactions</li>
+                            <li><i class="bi bi-check-lg"></i> Understanding more about effective trading methods and mindset</li>
+                        </ul>
+                        <section class="course-content">
+                            <h3>Lesson contents</h3>
+                            <p>14 parts <span class="expand-all" onclick="toggleAll()">Expand All</span></p>
+                          
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">1. How is a trend formed ?</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p>- A trend is formed by the movement of prices. Prices are determined by the supply and demand in the market.</p>
+                                    <p>- Since the supply and demand in the market constantly change, the market trend also changes accordingly.</p>
+                                    <p>- A trend can strengthen, weaken, or be broken and reversed, forming a new trend.</p>
+                                </div>
+                            </div>
+                          
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">2. The 3 Main Types of Trends ?</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p><span>* Uptrend</span></p>
+                                    <p>- An uptrend occurs when prices continuously form higher highs and higher lows compared to previous ones.</p>
+                                    <p><span>* Downtrend</span></p>
+                                    <p>- A downtrend occurs when prices form lower lows and lower highs compared to previous ones.</p>
+                                    <p><span>* Sideways Trend (Sideway):</span></p>
+                                    <p>- A sideways trend happens when the market does not exhibit a clear trend direction.</p>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                  <span class="toggle-symbol">+</span>
+                                  <span class="chapter-title">3. Trend and How to Identify Trends.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p>- In the financial market, trends can be categorized into two types: Trend and Strong Trend. 
+                                        Understanding these distinctions and the structure of trends is essential for effective analysis.
+                                    </p>
+                                    <p><span>* Components of Trends</span></p>
+                                    <ul>
+                                        <li style="list-style: decimal;"> 
+                                            <p><span>BULLISH Trend:</span></p>
+                                            <ul>
+                                                <li>A bullish trend is characterized by rising prices, 
+                                                    where higher highs and higher lows are formed.
+                                                </li>
+                                                <li>
+                                                    It consists of <span> two main components:</span>
+                                                </li>
+                                                <ul>
+                                                    <li>
+                                                        <p><span>BEARISH Wave (Main Wave):</span>The primary upward movement of prices, driving the trend.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p><span>Corrective Wave (Sub Wave):</span> A temporary downward movement or consolidation within 
+                                                            the larger bullish trend, often referred to as a <span>bearish wave.</span>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li style="list-style: decimal;">
+                                            <p><span>Bearish Trend:</span></p>
+                                            <ul>
+                                                <li>A bearish trend is characterized by falling prices, 
+                                                    where lower highs and lower lows are formed.
+                                                </li>
+                                                <li>
+                                                    It consists of <span>two main components:</span>
+                                                </li>
+                                                <ul>
+                                                    <li>
+                                                        <span>BEARISH Wave (Main Wave):</span>
+                                                        The primary downward movement of prices, driving the trend.
+                                                    </li>
+                                                    <li>
+                                                        <span>Corrective Wave (Sub Wave):</span>
+                                                        A temporary upward movement or consolidation within the larger bearish trend, often referred to as a
+                                                        <span>bullish wave.</span>
+                                                    </li>
+                                                </ul>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <p><span>* Identifying Trends</span></p>
+                                    <p>- To identify a trend, observe the market for consistent patterns of price movement, such as:</p>
+                                    <ul>
+                                        <li>For a 
+                                            <span>bullish trend,</span> 
+                                            look for a series of
+                                            <span>higher highs</span> 
+                                            and 
+                                            <span>higher lows.</span>
+                                        </li>
+                                        <li>
+                                            For a 
+                                            <span>bearish trend,</span> 
+                                            look for a series of
+                                            <span>lower highs</span> 
+                                            and 
+                                            <span>lower lows.</span>
+                                        </li>
+                                        <li>
+                                            During
+                                            <span>corrective waves,</span>
+                                            price movements will temporarily counteract the main trend before resuming the dominant direction.
+                                        </li>
+                                    </ul>
+
+                                    <p><span>* When is a Trend Considered BROKEN ?</span></p>
+                                    <p>- A trend is considered broken when the closing price violates the critical levels of the trend:</p>
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                           <p><span>For an Uptrend:</span></p>
+                                        </li>
+                                        <ul>
+                                            <li>The trend is broken when the closing price falls 
+                                                <span>below the lowest point </span>
+                                                (the trough) that created the most recent 
+                                                highest peak.
+                                            </li>
+                                            <li>
+                                                This indicates that the buyers are losing control, but it does not necessarily confirm the formation of a downtrend.
+                                            </li>
+                                        </ul>
+
+                                        <li style="list-style: decimal;">
+                                            <p><span>For a Downtrend:</span></p>
+                                        </li>
+                                        <ul>
+                                            <li>The trend is broken when the closing price rises 
+                                                <span>above the highest point</span> 
+                                                (the peak) that created the most recent 
+                                                <span>lowest trough.</span>
+                                            </li>
+                                            <li>This signals weakening selling pressure but does not guarantee the start of an uptrend.</li>
+                                        </ul>
+                                    </ul>
+
+                                    <p><span>* Key Points to Remember</span></p>
+                                    <ul>
+                                        <li>A <span>broken trend</span> suggests that the existing trend's momentum has weakened, 
+                                            and the market is at a potential inflection point.
+                                        </li>
+                                        <li>
+                                            A broken uptrend does not immediately imply a downtrend is forming, and vice versa. 
+                                            The market may enter a <span>sideways trend (consolidation)</span> 
+                                            or show signs of indecision before confirming a new trend direction.
+                                        </li>
+                                        <li>
+                                            Confirmation of a new trend requires consistent higher highs and higher lows 
+                                            (for an uptrend) or lower highs and lower lows (for a downtrend).
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">4. Why Trade WITH the Trend, NOT Against the Trend ?</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p>- The foundation of any market trend lies in <span> supply and demand dynamics.</span> 
+                                        Understanding these forces helps traders recognize the importance 
+                                        of aligning their trades with the prevailing trend.
+                                    </p>
+                                    <p><span>* The Market as a Battlefield</span></p>
+                                    <ul>
+                                        <li>The market is akin to a battlefield with two opposing sides: the 
+                                            <span>buyers</span> 
+                                            and the <span>sellers</span>
+                                        </li>
+                                        <li>
+                                            In an <span>uptrend</span> the buyers have the upper hand, 
+                                            consistently outnumbering the sellers and driving prices higher.
+                                        </li>
+                                        <li>
+                                            Conversely, in a <span>downtrend,</span> 
+                                            the sellers dominate, pushing prices lower.
+                                        </li>
+                                    </ul>
+                                    <p>- As a trader, you act as an observer entering this battlefield. 
+                                        Aligning with the stronger side (the trend) increases your chances of success.
+                                    </p>
+                                    <p><span>* The Risks of Trading Against the Trend</span></p>
+                                    <ul>
+                                        <li>
+                                            <span>Higher Probability of Loss:</span>
+                                            Going against the trend is like driving against traffic. 
+                                            While you may navigate safely at times, the likelihood of a collision (loss) 
+                                            is significantly higher.
+                                        </li>
+                                        <li>
+                                            <span>Reduced Edge:</span>
+                                            Trading against the prevailing market momentum puts you at a disadvantage, 
+                                            as you're fighting the dominant supply or demand force.
+                                        </li>
+                                    </ul>
+                                    <p><span>* Conclusion</span></p>
+                                    <p>- A professional trader must adopt the mindset of 
+                                        <span> "the Trend is my Friend."</span> 
+                                        This principle serves as a guiding mantra to navigate the market with discipline.
+                                    </p>
+                                    <ul>
+                                        <li>Trading <span>with the trend</span> means aligning your positions with 
+                                            the prevailing market forces, 
+                                            increasing the probability of success.
+                                        </li>
+                                        <li>
+                                            Trading <span>against the trend</span> introduces unnecessary risk, 
+                                            with a higher likelihood of loss.
+                                        </li>
+                                    </ul>
+                                    <p>- Ultimately, the choice is clear: 
+                                        <span>be the driver on the right side of the road,</span> 
+                                        and let the trend lead you toward consistent profits.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">5. Entry Price Area in a Trend.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p>- Trading successfully in trending markets requires a deep understanding of trends and well-timed entries and exits. 
+                                        This is the core principle of "Trading According to the Trend."
+                                    </p>
+                                    <p><span>* Purpose</span></p>
+                                    <p>- In an uptrend</p>
+                                    <ul>
+                                        <li>
+                                            The price forms <span>higher peaks</span> 
+                                            and <span>higher troughs</span> compared to previous levels.
+                                        </li>
+                                        <li>
+                                            To <span>maximize profits,</span> the optimal strategy is to:
+                                        </li>
+                                        <ul>
+                                            <li>
+                                                <span>Buy at the troughs</span> (when the price dips within the trend).
+                                            </li>
+                                            <li>
+                                                <span>Sell at the peaks</span> (when the price reaches a high point).
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                    <p>- By entering trades at favorable points in the trend, 
+                                        traders increase their profit potential while minimizing risks.
+                                    </p>
+                                    <p><span>* Requirements</span></p>
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Choose an Appropriate Time Frame (TF):</span></p>
+                                        </li>
+                                        <ul>
+                                            <li>Select a time frame that aligns with your trading style 
+                                                (e.g., daily for swing trading or hourly for intraday trading).
+                                            </li>
+                                            <li>
+                                                Stick to this time frame as your primary reference for identifying trends and making decisions.
+                                            </li>
+                                        </ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Understand the Trend:</span></p>
+                                            <ul>
+                                                <li>Develop a clear understanding of how to identify trends (uptrend, downtrend, or sideways).</li>
+                                                <li>Use tools like trendlines, moving averages, and market structure to confirm the trend.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p><span>* Important Notes</span></p>
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Avoid Trading Without a Clear Trend:</span></p>
+                                            <ul>
+                                                <li>If the market lacks a definitive trend (e.g., sideways movement), 
+                                                    wait for clarity before taking a position.
+                                                </li>
+                                                <li>
+                                                    Trading in unclear conditions increases the risk of false signals.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Do Not Chase the Trend:</span></p>
+                                            <ul>
+                                                <li>Avoid entering trades impulsively at random points within the trend, 
+                                                    especially at peaks where the price is already extended.
+                                                </li>
+                                                <li>
+                                                    Wait for pullbacks (retracements) to align your entry with the trend's continuation.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">6. Trading Method: Steps to Execute.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p><span>Step 1: Identify the Price Correction Area</span></p>
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p>A <span>correction area</span> is the zone where the price temporarily moves against 
+                                                the main trend before resuming its dominant direction.
+                                            </p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p>Use the following criteria to confirm a correction area:</p>
+                                        </li>
+                                        <ul>
+                                            <li>
+                                                <span>Clear Peaks:</span>
+                                                Clear Peaks: The subsequent peak must create a new, distinct high in an uptrend or a new low in a downtrend. 
+                                                Avoid counting insignificant movements like single candles.
+                                            </li>
+                                            <li>
+                                                Look for consistent price movements that reflect a pullback or retracement within the trend.
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                    <p><span>Step 2: Wait for the Price to Enter the Correction Area</span></p>
+                                    <p>- Once the correction area is identified, <span>do not act impulsively.</span> Instead:</p>
+                                    <ul>
+                                        <li>Wait for the price to retrace into the predefined correction area.</li>
+                                        <li>Monitor the price action closely within this zone to confirm potential entries.</li>
+                                        <li>Use indicators (e.g., Fibonacci retracement levels, support zones, or trendlines) 
+                                            to validate the correction area.
+                                        </li>
+                                    </ul>
+                                    <p>- By patiently waiting for the price to fall into the correction area, traders can align their entries with 
+                                        high-probability setups that take advantage of the trend's continuation.
+                                    </p>
+                                    <p><span>* Key Tip:</span></p>
+                                    <p>- The goal is to enter trades when the correction ends and the price shows signs of resuming the main trend.</p>
+                                    <p>- This approach minimizes risk and enhances profit potential by leveraging the natural ebb and flow of market movements.</p>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">7. Identifying the Exact Buying Point in a Correction Zone.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p><span>Understanding the Corrective Wave in an Uptrend</span></p>
+                                    <ul>
+                                        <li>In an <span>uptrend,</span> the corrective wave originates from the peak 
+                                            and ends at the trough that follows.
+                                        </li>
+                                        <li>
+                                            The <span>optimal buying point</span> is at the <span>trough</span> of the trend, 
+                                            where the corrective wave concludes and the main trend is likely to resume.
+                                        </li>
+                                    </ul>
+                                    <p>- To identify this buying point, the focus must be on pinpointing where the corrective wave ends, 
+                                        signaling the best entry for a buy trade.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">8. Using Two Time Frames (TF).</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p>- This method leverages two time frames to effectively analyze and enter trades:</p>
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Main Time Frame (Main TF):</span></p>
+                                        </li>
+                                        <ul>
+                                            <li><span>Purpose:</span> Identify the overall market trend.</li>
+                                            <li>Example: If the main TF is H1, you'll focus on identifying the broader uptrend and correction zones within it.</li>
+                                            <li>Action: Mark the peaks and troughs, and identify the corrective wave within the trend.</li>
+                                        </ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Secondary Time Frame (Secondary TF):</span></p>
+                                        </li>
+                                        <ul>
+                                            <li><span>Purpose:</span> Zoom in to analyze the structure of the corrective wave on the main TF.</li>
+                                            <li>Example: If the main TF is H1, use <span>M15</span> as the secondary TF.</li>
+                                            <li>Observation:</li>
+                                            <ul>
+                                                <li style="list-style: lower-alpha;"> The corrective wave on the main TF becomes a 
+                                                    downtrend on the secondary TF (opposite the main trend).
+                                                </li>
+                                                <li style="list-style: lower-alpha;">This downtrend on the secondary TF provides insight into the 
+                                                    movement of the correction.
+                                                </li>
+                                            </ul>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">9. Steps to Identify the Optimal Buying Point.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>On the Main TF:</span></p>
+                                        </li>
+                                        <ul>
+                                            <li>Identify the corrective wave within the uptrend.</li>
+                                            <li>Mark the area where the price has retraced and is likely to form a trough.</li>
+                                        </ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>On the Secondary TF:</span></p>
+                                        </li>
+                                        <ul>
+                                            <li>Zoom into the corrective wave to observe its structure (now visible as a downtrend).</li>
+                                            <li>Look for reversal patterns (e.g., double bottom, bullish engulfing candlestick) or signals that the corrective wave is losing momentum.</li>
+                                            <li>Use additional tools like support levels or Fibonacci retracement (e.g., 50% or 61.8%) to confirm the end of the corrective wave.</li>
+                                        </ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Confirm the Buying Point:</span></p>
+                                        </li>
+                                        <ul>
+                                            <li>Wait for confirmation on the secondary TF that the downtrend is reversing.</li>
+                                            <li>Enter a buy trade near the trough, ensuring that the main trend on the main TF aligns with your entry.</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title" style="color: red;">10. Key Notes.</span>
+                                </div>
+                                <div class="lesson-content">                                   
+                                    <p>- Always align trades with the <span>main TF's trend.</span></p>
+                                    <p>- Use the secondary TF to fine-tune entries and achieve precision.</p>
+                                    <p>- Avoid impulsive trades—ensure there are clear reversal signals before entering.</p>                                   
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">11. Setting Entry, Stop Loss, and Take Profit.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p><span>* Key Perspective</span></p>
+                                    <p>- We only enter a trade when the correction wave (downtrend on the secondary TF) 
+                                        has <span>ended</span> and the price shows signs of resuming the <span>main trend</span> (uptrend on the main TF).
+                                    </p>
+                                    <ul>
+                                        <li>The <span>correction wave</span> is treated as a trend of its own (a downtrend in this context).</li>
+                                        <li>The <span>end of the correction wave</span> does not guarantee a trend reversal, 
+                                            but it provides the opportunity for an optimal buy entry aligned with the main trend.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">12. Steps to Set Entry, Stop Loss, and Take Profit.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Entry</span></p>
+                                        </li>
+                                        <p><span>* Criteria for Entry:</span></p>
+                                        <p>- Wait for confirmation that the correction wave (downtrend) has ended.</p>
+                                        <p>- Signs to confirm the end of the correction wave:</p>
+                                        <ul>
+                                            <li>Price breaks above a key resistance level formed within the correction wave.</li>
+                                            <li>Bullish reversal patterns (e.g., double bottom, bullish engulfing candlestick, or hammer) on the secondary TF.</li>
+                                            <li>Momentum indicators (e.g., RSI moving above 50 or MACD bullish crossover) signaling upward movement.</li>
+                                        </ul>
+                                        <p><span>* Action:</span> Enter the trade as soon as these confirmations align, ensuring the entry point is as close as possible to the end of the correction wave.</p>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Stop Loss</span></p>
+                                            <p><span>* Purpose:</span> To limit potential losses in case the trend does not resume or reverses unexpectedly.</p>
+                                            <p><span>* Placement:</span></p>
+                                            <ul>
+                                                <li>Place the stop loss just below the lowest point of the correction wave (the trough on the main TF).</li>
+                                                <li>For additional safety, consider adding a small buffer below the trough to account for market noise.</li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Take Profit</span></p>
+                                            <p><span>* Purpose:</span> To secure gains by exiting at a favorable price point.</p>
+                                            <p><span>* Placement:</span></p>
+                                            <ul>
+                                                <li>Identify the next <span>resistance level</span> on the main TF as the first take profit target.</li>
+                                                <li>Alternatively, calculate a specific risk-to-reward ratio (e.g., 1:2 or 1:3) 
+                                                    based on the distance between the entry point and the stop loss.
+                                                </li>
+                                                <li>For trends with strong momentum, consider scaling out profits at multiple levels:</li>
+                                                <ul>
+                                                    <li style="list-style: lower-alpha;"> First TP: At the previous peak of the main trend.</li>
+                                                    <li style="list-style: lower-alpha;"> Second TP: At an extension level (e.g., 127.2% or 161.8% Fibonacci extension of the corrective wave).</li>
+                                                </ul>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">13. Example Workflow.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Main TF (H1):</span></p>
+                                            <p>- Identify the uptrend and mark the correction zone.</p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Secondary TF (M15):</span></p>
+                                            <p>- Monitor the correction wave.</p>
+                                            <p>- Confirm the end of the downtrend with bullish signs (e.g., breakout, reversal pattern).</p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Set Parameters:</span></p>
+                                            <p><span>- Entry:</span> Enter after confirmation of the trend resumption.</p>
+                                            <p><span>- Stop Loss:</span> Below the trough of the correction wave on the main TF.</p>
+                                            <p><span>- Take Profit:</span> At the next resistance level or based on a risk-to-reward ratio.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title" style="color: red;">14. Important Notes!</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p>Patience is crucial—do not rush into a trade without confirmation.</p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p>Always maintain a favorable <span>risk-to-reward ratio</span> to ensure long-term profitability.</p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p>Adjust stop loss and take profit levels dynamically if the trend gains momentum or 
+                                                if new resistance/support levels form.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+            
+                    </div>
+                
+                    <!-- Right Section -->
+                    <div class="course-summary">
+                        <div class="video-preview" style="background: linear-gradient(135deg, #ff7e5f, #feb47b);">
+                            <span>Mindset about trading</span>
+                        </div>
+                    <h2>Free</h2>
+                    <ul class="course-details">
+                        <li>🎓 Trình độ cơ bản</li>
+                        <li>🎥 Tổng số 12 bài học</li>
+                        <li>🌐 Học mọi lúc, mọi nơi</li>
+                    </ul>
+                    </div>
+                </div>
+                </section>
+                
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-10 me-auto mb-4">
+                            <h4 class="text-white mb-3"><a href="index.html">Real </a> Profit</h4>
+                            <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>Real Profit</strong></p>
+                            <br>
+                            <p class="copyright-text">Designed by Group Profit</p>
+                        </div>
+
+                        <div class="col-lg-5 col-8">
+                            <h5 class="text-white mb-3">Sitemap</h5>
+
+                            <ul class="footer-menu d-flex flex-wrap">
+                                <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About</a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Products</a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy policy</a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">FAQs</a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-4">
+                            <h5 class="text-white mb-3">Social</h5>
+
+                            <ul class="social-icon">
+
+                                <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+
+                                <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+
+                                <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                                <li><a href="#" class="social-icon-link bi-skype"></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+
+        </main>
+            
+        
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+
+        <script>
+            // OPEN LESSONS
+            function toggleChapter(element) {
+                const lessonContent= element.nextElementSibling;
+                const toggleSymbol = element.querySelector('.toggle-symbol');
+              
+                if (lessonContent.style.display === "none" || !lessonContent.style.display) {
+                  lessonContent.style.display = "block";
+                  toggleSymbol.textContent = "-";
+                } else {
+                  lessonContent.style.display = "none";
+                  toggleSymbol.textContent = "+";
+                }
+              }
+              
+              function toggleAll() {
+                const chapters = document.querySelectorAll('.chapter');
+                const expandAllButton = document.querySelector('.expand-all');
+              
+                chapters.forEach((chapter) => {
+                  const lessonContent = chapter.querySelector('.lesson-content');
+                  const toggleSymbol = chapter.querySelector('.toggle-symbol');
+              
+                  if (expandAllButton.textContent === "Expand All") {
+                    lessonContent.style.display = "block";
+                    toggleSymbol.textContent = "-";
+                  } else {
+                    lessonContent.style.display = "none";
+                    toggleSymbol.textContent = "+";
+                  }
+                });
+              
+                expandAllButton.textContent =
+                  expandAllButton.textContent === "Expand All"
+                    ? "Close all"
+                    : "Expand All";
+              }
+              
+        </script>
+    </body>
+</html>

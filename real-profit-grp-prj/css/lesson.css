@@ -127,6 +127,7 @@
 
 .chapter-title {
   user-select: none; 
+  text-transform: uppercase;
 }
 
 .toggle-symbol {
@@ -141,10 +142,9 @@
 }
 
 .lesson-content p {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--dark-color);
-  margin: 0 15px;
-  margin-top: 10px;
+  margin: 10px 15px;
   line-height: 2;
   font-weight: 500;
   font-family: var(--body-font-family);
@@ -160,4 +160,5 @@
   margin-top: 5px;
   list-style: disc;
   font-family: var(--body-font-family);
+  font-size: 15px;
 }
