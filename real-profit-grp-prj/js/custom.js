@@ -30,6 +30,19 @@
     
   })(window.jQuery);
 
+// LOGINBOX
+const loginContainer = document.getElementById ('login-container') 
+const registerBtn = document.getElementById ('register')
+const loginBtn = document.getElementById ('login')
+
+registerBtn.addEventListener('click', () => {
+  loginContainer.classList.add("active");
+});
+
+loginBtn.addEventListener('click', () => {
+  loginContainer.classList.remove("active");
+});
+
 // CHAT BOT
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input img");
@@ -158,6 +171,7 @@ function toggleAll() {
       : "Expand All";
 }
 
+// DO TEST 
 let correctAnswers = 0;
 const totalQuestions = 3;
 
