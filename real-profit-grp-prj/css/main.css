@@ -1160,5 +1160,3 @@ button:focus:not(:focus-visible) {
 .chat-input textarea:valid ~ img {
   visibility: visible;
 }
-
-/* LOGIN BOX */
