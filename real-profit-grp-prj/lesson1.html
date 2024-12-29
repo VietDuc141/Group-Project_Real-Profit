@@ -163,37 +163,61 @@
                                 </div>
                             </div>
 
-                            <div id="quiz">
-                                <h1>Sử dụng cú pháp "shorthand" cho background</h1>
-                                <div class="question" id="question1">
-                                    <p><strong>1. Sử dụng cách viết 'shorthand' khi CSS thuộc tính background.</strong></p>
-                                    <ul class="options">
-                                        <li><label><input type="radio" name="q1" onclick="checkAnswer(this, 'correct', 1)"> background: url(image.png) center / contain no-repeat</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q1" onclick="checkAnswer(this, 'wrong', 1)"> background: url(image.png) no-repeat center contain</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q1" onclick="checkAnswer(this, 'wrong', 1)"> background: url(image.png) center contain no-repeat</label><span class="feedback"></span></li>
-                                    </ul>
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                  <span class="toggle-symbol">+</span>
+                                  <span class="chapter-title">!!! Quiz.</span>
                                 </div>
-                        
-                                <div class="question" id="question2">
-                                    <p><strong>2. Thuộc tính nào dùng để căn chỉnh văn bản?</strong></p>
-                                    <ul class="options">
-                                        <li><label><input type="radio" name="q2" onclick="checkAnswer(this, 'wrong', 2)"> color</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q2" onclick="checkAnswer(this, 'correct', 2)"> text-align</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q2" onclick="checkAnswer(this, 'wrong', 2)"> font-size</label><span class="feedback"></span></li>
-                                    </ul>
+                                <div class="lesson-content lesson-ques" id="quiz">
+                                    <h3>Question: Mindset about trading.</h3>
+                                    <div class="question">
+                                        <p><span>1.What is the fundamental truth about trading mentioned in the content ?</span></p>
+                                        <label><input type="radio" name="q1" value="correct"> Profits always come with risks.</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> Trading guarantees a 100% win rate.</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> Risks can be completely eliminated with the right strategy.</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> Only experienced traders can make profits.</label><br>
+                                    </div>
+                                
+                                    <div class="question">
+                                        <p><span>2. Which of the following is NOT a recommended part of the "Right Mindset" for trading ?</span></p>
+                                        <label><input type="radio" name="q2" value="wrong"> Learn solid knowledge before starting.</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> Focus on slow, steady earnings.</label><br>
+                                        <label><input type="radio" name="q2" value="correct"> Quit your regular job to trade full-time immediately.</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> Avoid thinking about getting rich until gaining enough experience.</label><br>
+                                    </div>
+                                
+                                    <div class="question">
+                                        <p><span>3. What should traders focus on to improve their trading performance ?</span></p>
+                                        <label><input type="radio" name="q3" value="wrong"> Achieving a 100% win rate.</label><br>
+                                        <label><input type="radio" name="q3" value="correct"> Increasing the probability of successful trades.</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> Rushing into the market without a plan.</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> Eliminating all risks completely.</label><br>
+                                    </div>
+
+                                    <div class="question">
+                                        <p><span>4. Which of the following is a characteristic of the "Wrong Mindset" in trading ?</span></p>
+                                        <label><input type="radio" name="q4" value="wrong"> Developing a clear trading plan.</label><br>
+                                        <label><input type="radio" name="q4" value="correct"> Trading first, learning later.</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> Practicing disciplined risk management.</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> Keeping trading as a side activity initially.</label><br>
+                                    </div>
+
+                                    <div class="question">
+                                        <p><span>5. What is a key component of disciplined risk management in trading ?</span></p>
+                                        <label><input type="radio" name="q5" value="wrong"> Avoiding any risks entirely.</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> Focusing solely on quick profits.</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> Investing all your savings into one trade.</label><br>
+                                        <label><input type="radio" name="q5" value="correct"> Following a clear trading plan and system.</label><br>
+                                    </div>
+
+                                    <button class="finish-btn" onclick="finishQuiz()">Finish</button>
+                                
+                                    <p class="warning"><i class="bi bi-x-circle-fill"></i> Please answer all questions correctly before proceeding!</p>
+                                    <p class="success"><i class="bi bi-check-circle-fill"></i> Congratulations! Moving to Lesson 2...</p>
                                 </div>
-                        
-                                <div class="question" id="question3">
-                                    <p><strong>3. Thuộc tính CSS nào dùng để thay đổi kích thước font chữ?</strong></p>
-                                    <ul class="options">
-                                        <li><label><input type="radio" name="q3" onclick="checkAnswer(this, 'correct', 3)"> font-size</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q3" onclick="checkAnswer(this, 'wrong', 3)"> font-weight</label><span class="feedback"></span></li>
-                                        <li><label><input type="radio" name="q3" onclick="checkAnswer(this, 'wrong', 3)"> font-style</label><span class="feedback"></span></li>
-                                    </ul>
-                                </div>
-                        
-                                <button class="finish-button" id="finishButton" onclick="finishQuiz()">Finish</button>
-                            </div>                                
+                            </div>
+
+                            
                         </section>
                         
                     </div>

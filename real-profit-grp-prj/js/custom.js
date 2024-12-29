@@ -172,48 +172,28 @@ function toggleAll() {
 }
 
 // DO TEST 
-let correctAnswers = 0;
-const totalQuestions = 3;
-
-function checkAnswer(input, status, questionNumber) {
-    const listItem = input.closest('li');
-    const feedback = listItem.querySelector('.feedback');
-
-    // Remove wrong feedback if exists
-    const otherOptions = input.closest('ul').querySelectorAll('li');
-    otherOptions.forEach(option => {
-        if (option !== listItem) {
-            option.classList.remove('wrong');
-            const otherFeedback = option.querySelector('.feedback');
-            if (otherFeedback) {
-                otherFeedback.textContent = '';
-                otherFeedback.classList.remove('wrong');
-            }
-        }
-    });
-
-    if (status === 'correct') {
-        listItem.classList.add('correct');
-        feedback.textContent = ' Correct Answer';
-        feedback.classList.add('correct');
-        correctAnswers++;
-        disableOptions(input.closest('ul'));
-    } else {
-        listItem.classList.add('wrong');
-        feedback.textContent = ' Wrong Answer, Try Again';
-        feedback.classList.add('wrong');
-    }
-
-    if (correctAnswers === totalQuestions) {
-        document.getElementById('finishButton').style.display = 'block';
-    }
-}
-
-function disableOptions(ulElement) {
-    const options = ulElement.querySelectorAll('input');
-    options.forEach(option => option.disabled = true);
-}
-
 function finishQuiz() {
-    window.location.href = 'lesson2.html';
+  const questions = document.querySelectorAll('.question');
+  let allCorrect = true;
+
+  questions.forEach(question => {
+      const selected = question.querySelector('input[type=radio]:checked');
+      if (!selected || selected.value !== 'correct') {
+          allCorrect = false;
+      }
+  });
+
+  const warning = document.querySelector('.warning');
+  const success = document.querySelector('.success');
+
+  if (allCorrect) {
+      warning.style.display = 'none';
+      success.style.display = 'block';
+      setTimeout(() => {
+          window.location.href = 'lesson2.html';
+      }, 2000); // Redirects to lesson2.html after 2 seconds
+  } else {
+      warning.style.display = 'block';
+      success.style.display = 'none';
+  }
 }
