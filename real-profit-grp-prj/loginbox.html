@@ -82,37 +82,43 @@
         <section class="login-body">
             <div class="login-container" id="login-container">
                 <div class="form-container sign-up">
-                    <form>
+                    <form action="register.php" method="post">
                         <h2>Create Account</h2>
                         <div class="social-icons">
-                            <a href="#" class="icon"><i class="bi bi-google"></i></a>
+                            <!-- Google Login Button -->
+                            <a href="redirect.php" class="icon">
+                                <i class="bi bi-google"></i> 
+                            </a>
                             <a href="#" class="icon"><i class="bi bi-facebook"></i></a>
                             <a href="#" class="icon"><i class="bi bi-instagram"></i></a>
                             <a href="#" class="icon"><i class="bi bi-github"></i></a>                        
                         </div>
 
                         <span>or use your email for registration</span>
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Password">
-                        <button>Sign Up</button>
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email"  placeholder="Email" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <button type="submit">Sign Up</button>
                     </form>
                 </div>
 
                 <div class="form-container sign-in">
-                    <form>
+                    <form action="login.php" method="post">
                         <h2>Sign In</h2>
                         <div class="social-icons">
-                            <a href="#" class="icon"><i class="bi bi-google"></i></a>
+                            <!-- Google Login Button -->
+                            <a href="redirect.php" class="icon">
+                                <i class="bi bi-google"></i> 
+                            </a>
                             <a href="#" class="icon"><i class="bi bi-facebook"></i></a>
                             <a href="#" class="icon"><i class="bi bi-instagram"></i></a>
                             <a href="#" class="icon"><i class="bi bi-github"></i></a>
                         </div>
                         <span>or use your email password</span>
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Password">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="password" name="password" placeholder="Password" required>
                         <a href="forgetpass.html">Forget Your Password?</a>
-                        <button>Sign In</button>
+                        <button type="submit">Sign In</button>
                     </form>
                 </div>
 
