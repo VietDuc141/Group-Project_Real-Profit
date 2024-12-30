@@ -1,3 +1,5 @@
-{
-    "liveServer.settings.port": 5501
-}
+    {
+        "liveServer.settings.port": 5501,
+        "intelephense.environment.includePaths": ["C:/xampp/htdocs/real-profit-grp-prj/vendor"]
+        
+    }
