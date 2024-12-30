@@ -199,6 +199,83 @@
                                 </div>
                             </div>    
 
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                  <span class="toggle-symbol">+</span>
+                                  <span class="chapter-title" style="color: red;"><i class="bi bi-pen-fill"></i> Quiz.</span>
+                                </div>
+                                <div class="lesson-content lesson-ques" id="quiz">
+                                    <h3>Question: Exponential Moving Average (EMA).</h3>
+                                    
+                                    <!-- Question 1 -->
+                                    <div class="question">
+                                        <p><strong>1. What is the primary function of the Moving Average (MA) indicator?</strong></p>
+                                        <label><input type="radio" name="q1" value="wrong"> To predict future price movements</label><br>
+                                        <label><input type="radio" name="q1" value="correct"> To smooth price data</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> To eliminate lag in market data</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> To display support and resistance levels</label><br>
+                                    </div>
+
+                                    <!-- Question 2 -->
+                                    <div class="question">
+                                        <p><strong>2. Which type of Moving Average reacts more quickly to market price changes?</strong></p>
+                                        <label><input type="radio" name="q2" value="correct"> Exponential Moving Average (EMA)</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> Simple Moving Average (SMA)</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> Weighted Moving Average (WMA)</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> Moving Average Convergence Divergence (MACD)</label><br>
+                                    </div>
+
+                                    <!-- Question 3 -->
+                                    <div class="question">
+                                        <p><strong>3. What indicates an uptrend using EMA 89 and EMA 200?</strong></p>
+                                        <label><input type="radio" name="q3" value="wrong"> The price is below both EMA 89 and EMA 200</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> EMA 89 crosses below EMA 200</label><br>
+                                        <label><input type="radio" name="q3" value="correct"> The price is above both EMA 89 and EMA 200</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> EMA 89 and EMA 200 are moving sideways</label><br>
+                                    </div>
+
+                                    <!-- Question 4 -->
+                                    <div class="question">
+                                        <p><strong>4. What is the significance of a bullish crossover of EMA 89 and EMA 200?</strong></p>
+                                        <label><input type="radio" name="q4" value="correct"> Signals a potential uptrend</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> Signals a potential downtrend</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> Indicates market consolidation</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> Confirms a sideways market</label><br>
+                                    </div>
+
+                                    <!-- Question 5 -->
+                                    <div class="question">
+                                        <p><strong>5. What is the recommended strategy during a sideways market?</strong></p>
+                                        <label><input type="radio" name="q5" value="wrong"> Take Long positions only</label><br>
+                                        <label><input type="radio" name="q5" value="correct"> Stay out of the market</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> Take Short positions only</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> Trade aggressively in both directions</label><br>
+                                    </div>
+
+                                    <!-- Question 6 -->
+                                    <div class="question">
+                                        <p><strong>6. When should a trader enter a Long position in an uptrend using EMA?</strong></p>
+                                        <label><input type="radio" name="q6" value="wrong"> When the price is at its peak</label><br>
+                                        <label><input type="radio" name="q6" value="wrong"> When EMA 89 crosses below EMA 200</label><br>
+                                        <label><input type="radio" name="q6" value="wrong"> When the price stays above EMA 200 for three consecutive days</label><br>
+                                        <label><input type="radio" name="q6" value="correct"> When the price retraces back to the two EMAs</label><br>
+                                    </div>
+
+                                    <!-- Question 7 -->
+                                    <div class="question">
+                                        <p><strong>7. What does a bearish crossover of EMA 89 and EMA 200 indicate?</strong></p>
+                                        <label><input type="radio" name="q7" value="wrong"> A continuation of the uptrend</label><br>
+                                        <label><input type="radio" name="q7" value="wrong"> A reversal to a sideways market</label><br>
+                                        <label><input type="radio" name="q7" value="correct"> A potential downtrend</label><br>
+                                        <label><input type="radio" name="q7" value="wrong"> No significant trend change</label><br>
+                                    </div>
+
+                                    <button class="finish-btn" onclick="finishQuiz()">Finish</button>
+                                
+                                    <p class="warning"><i class="bi bi-x-circle-fill"></i> Please answer all questions correctly before proceeding!</p>
+                                    <p class="success"><i class="bi bi-check-circle-fill"></i> Congratulations! Moving to Lesson 8...</p>
+                                </div>
+                            </div>
                         </section>
                           
                     </div>
@@ -218,51 +295,51 @@
                 </div>
                 </section>
                 
-            <footer class="site-footer">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-3 col-10 me-auto mb-4">
-                            <h4 class="text-white mb-3"><a href="index.html">Real </a> Profit</h4>
-                            <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>Real Profit</strong></p>
-                            <br>
-                            <p class="copyright-text">Designed by Group Profit</p>
+                <footer class="site-footer">
+                    <div class="container">
+                        <div class="row">
+        
+                            <div class="col-lg-3 col-10 me-auto mb-4">
+                                <h4 class="text-white mb-3"><a href="index.html">Real</a> Profit</h4>
+                                <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>Real profit</strong></p>
+                                <br>
+                                <p class="copyright-text">Designed by Group Profit</p>
+                            </div>
+        
+                            <div class="col-lg-5 col-8">
+                                <h5 class="text-white mb-3">Sitemap</h5>
+        
+                                <ul class="footer-menu d-flex flex-wrap">
+                                    <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Home</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Learning</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Practice</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">News</a></li>
+                                </ul>
+                            </div>
+        
+                            <div class="col-lg-3 col-4">
+                                <h5 class="text-white mb-3">Social</h5>
+        
+                                <ul class="social-icon">
+        
+                                    <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-skype"></a></li>
+                                </ul>
+                            </div>
+        
                         </div>
-
-                        <div class="col-lg-5 col-8">
-                            <h5 class="text-white mb-3">Sitemap</h5>
-
-                            <ul class="footer-menu d-flex flex-wrap">
-                                <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About</a></li>
-
-                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Products</a></li>
-
-                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy policy</a></li>
-
-                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">FAQs</a></li>
-
-                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-lg-3 col-4">
-                            <h5 class="text-white mb-3">Social</h5>
-
-                            <ul class="social-icon">
-
-                                <li><a href="#" class="social-icon-link bi-youtube"></a></li>
-
-                                <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
-
-                                <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-
-                                <li><a href="#" class="social-icon-link bi-skype"></a></li>
-                            </ul>
-                        </div>
-
                     </div>
-                </div>
-            </footer>
+                </footer>
 
         </main>
             

@@ -192,6 +192,65 @@
                                     </ul>
                                 </div>
                             </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                  <span class="toggle-symbol">+</span>
+                                  <span class="chapter-title" style="color: red;"><i class="bi bi-pen-fill"></i> Quiz.</span>
+                                </div>
+                                <div class="lesson-content lesson-ques" id="quiz">
+                                    <h3>Question: Resistance and Support.</h3>
+                                    <!-- Question 1 -->
+                                    <div class="question">
+                                        <p><span>1. What is the primary characteristic of a support zone ?</span></p>
+                                        <label><input type="radio" name="q1" value="wrong"> A specific price point where prices always reverse upward.</label><br>
+                                        <label><input type="radio" name="q1" value="correct"> A price range where buying demand is strong enough to prevent further price declines.</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> A price range where selling demand is strong enough to prevent price increases.</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> A price level that discourages buyers from entering the market.</label><br>
+                                    </div>
+                                    
+                                    <!-- Question 2 -->
+                                    <div class="question">
+                                        <p><span>2. What happens when the price reaches a resistance zone ?</span></p>
+                                        <label><input type="radio" name="q2" value="correct"> Selling demand strengthens, causing the price to reverse and decline.</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> Selling demand weakens, allowing the price to continue rising.</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> Both buying and selling demand decrease, stabilizing the price.</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> Buying demand increases significantly, pushing the price higher.</label><br>
+                                    </div>
+                                    
+                                    <!-- Question 3 -->
+                                    <div class="question">
+                                        <p><span>3. What is the concept of "role reversal" in support and resistance ?</span></p>
+                                        <label><input type="radio" name="q3" value="wrong"> Support zones and resistance zones swap locations automatically over time.</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> Support zones are ignored when a new resistance is formed.</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> Role reversal only applies to short-term price movements.</label><br>
+                                        <label><input type="radio" name="q3" value="correct"> A broken resistance becomes new support, and a broken support becomes new resistance.</label><br>
+                                    </div>
+
+                                    <!-- Question 4 -->
+                                    <div class="question">
+                                        <p><span>4. What strengthens a support or resistance zone ?</span></p>
+                                        <label><input type="radio" name="q4" value="wrong"> The price breaking through the zone quickly and repeatedly.</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> Low trading volume at the zone.</label><br>
+                                        <label><input type="radio" name="q4" value="correct"> The price frequently touching the zone without breaking it.</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> A single instance of price reversal at the zone.</label><br>
+                                    </div>
+
+                                    <!-- Question 5 -->
+                                    <div class="question">
+                                        <p><span>5. What typically happens when a support or resistance zone is broken ?</span></p>
+                                        <label><input type="radio" name="q5" value="wrong"> The price stabilizes and remains at the previous level.</label><br>
+                                        <label><input type="radio" name="q5" value="correct"> The price moves to establish a new support or resistance zone.</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> The market becomes unpredictable and random.</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> The strength of the broken zone increases.</label><br>
+                                    </div>
+
+                                    <button class="finish-btn" onclick="finishQuiz()">Finish</button>
+                                
+                                    <p class="warning"><i class="bi bi-x-circle-fill"></i> Please answer all questions correctly before proceeding!</p>
+                                    <p class="success"><i class="bi bi-check-circle-fill"></i> Congratulations! Moving to Lesson 4...</p>
+                                </div>
+                            </div>
                         </section>
                           
                     </div>
@@ -211,51 +270,51 @@
                 </div>
                 </section>
                 
-            <footer class="site-footer">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-3 col-10 me-auto mb-4">
-                            <h4 class="text-white mb-3"><a href="index.html">Real </a> Profit</h4>
-                            <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>Real Profit</strong></p>
-                            <br>
-                            <p class="copyright-text">Designed by Group Profit</p>
+                <footer class="site-footer">
+                    <div class="container">
+                        <div class="row">
+        
+                            <div class="col-lg-3 col-10 me-auto mb-4">
+                                <h4 class="text-white mb-3"><a href="index.html">Real</a> Profit</h4>
+                                <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>Real profit</strong></p>
+                                <br>
+                                <p class="copyright-text">Designed by Group Profit</p>
+                            </div>
+        
+                            <div class="col-lg-5 col-8">
+                                <h5 class="text-white mb-3">Sitemap</h5>
+        
+                                <ul class="footer-menu d-flex flex-wrap">
+                                    <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Home</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Learning</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Practice</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">News</a></li>
+                                </ul>
+                            </div>
+        
+                            <div class="col-lg-3 col-4">
+                                <h5 class="text-white mb-3">Social</h5>
+        
+                                <ul class="social-icon">
+        
+                                    <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-skype"></a></li>
+                                </ul>
+                            </div>
+        
                         </div>
-
-                        <div class="col-lg-5 col-8">
-                            <h5 class="text-white mb-3">Sitemap</h5>
-
-                            <ul class="footer-menu d-flex flex-wrap">
-                                <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About</a></li>
-
-                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Products</a></li>
-
-                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy policy</a></li>
-
-                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">FAQs</a></li>
-
-                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-lg-3 col-4">
-                            <h5 class="text-white mb-3">Social</h5>
-
-                            <ul class="social-icon">
-
-                                <li><a href="#" class="social-icon-link bi-youtube"></a></li>
-
-                                <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
-
-                                <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-
-                                <li><a href="#" class="social-icon-link bi-skype"></a></li>
-                            </ul>
-                        </div>
-
                     </div>
-                </div>
-            </footer>
+                </footer>
 
         </main>
             
@@ -268,44 +327,5 @@
         <script src="js/slick.min.js"></script>
         <script src="js/custom.js"></script>
 
-        <script>
-            // OPEN LESSONS
-            function toggleChapter(element) {
-                const lessonContent= element.nextElementSibling;
-                const toggleSymbol = element.querySelector('.toggle-symbol');
-              
-                if (lessonContent.style.display === "none" || !lessonContent.style.display) {
-                  lessonContent.style.display = "block";
-                  toggleSymbol.textContent = "-";
-                } else {
-                  lessonContent.style.display = "none";
-                  toggleSymbol.textContent = "+";
-                }
-              }
-              
-              function toggleAll() {
-                const chapters = document.querySelectorAll('.chapter');
-                const expandAllButton = document.querySelector('.expand-all');
-              
-                chapters.forEach((chapter) => {
-                  const lessonContent = chapter.querySelector('.lesson-content');
-                  const toggleSymbol = chapter.querySelector('.toggle-symbol');
-              
-                  if (expandAllButton.textContent === "Expand All") {
-                    lessonContent.style.display = "block";
-                    toggleSymbol.textContent = "-";
-                  } else {
-                    lessonContent.style.display = "none";
-                    toggleSymbol.textContent = "+";
-                  }
-                });
-              
-                expandAllButton.textContent =
-                  expandAllButton.textContent === "Expand All"
-                    ? "Close all"
-                    : "Expand All";
-              }
-              
-        </script>
     </body>
 </html>

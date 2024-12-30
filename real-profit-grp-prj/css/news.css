@@ -1,0 +1,165 @@
+.card {
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translate(-2px);
+}
+
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.news-source {
+    margin-block: 12px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown button */
+.dropdown button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+    cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 8px 12px;
+    z-index: 1;
+    min-width: 160px;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown when hovered or clicked */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px; /* Set a fixed height */
+    max-width: 400px; /* Optional: control card width */
+    margin: 10px; /* Add spacing between cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.card-header img {
+    max-height: 150px;
+    object-fit: cover; /* Ensures images fit well without distortion */
+    width: 100%;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center; /* Optional: centers text */
+}
+
+.card h3 {
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-bar input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.card {
+    margin: 5px; 
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+}
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+}
+
+.bookmark-btn {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.bookmark-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.bookmark-btn i {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.bookmark-btn.active i {
+    color: #f39c12; /* Highlight color for active bookmarks */
+}

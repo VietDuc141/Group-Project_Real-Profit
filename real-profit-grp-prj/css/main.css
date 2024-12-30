@@ -199,6 +199,7 @@ strong {
   z-index: 2;
   will-change: transform;
   transition: transform 300ms linear;
+  overflow: visible;
 }
 
 .navbar span, h2 span, h4 span {
@@ -358,6 +359,14 @@ strong {
 }
 
 .header-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-header {
   position: absolute;
   top: 0;
   right: 0;
@@ -838,7 +847,7 @@ button:focus:not(:focus-visible) {
 .contactButton_link {
   display: flex;
   justify-content: center;
-  margin-top: 105px;
+  margin-top: 100px;
 }
 .contactButton {
   background: var(--dark-color);

@@ -186,14 +186,25 @@ function finishQuiz() {
   const warning = document.querySelector('.warning');
   const success = document.querySelector('.success');
 
-  if (allCorrect) {
-      warning.style.display = 'none';
-      success.style.display = 'block';
-      setTimeout(() => {
-          window.location.href = 'lesson2.html';
-      }, 2000); // Redirects to lesson2.html after 2 seconds
-  } else {
-      warning.style.display = 'block';
-      success.style.display = 'none';
-  }
+  const currentUrl = window.location.href;
+  const match = currentUrl.match(/lesson(\d+)\.html/);
+
+  if (match) {
+      let currentLesson = parseInt(match[1]); // Take the number of the lesson
+      if (allCorrect) {
+          warning.style.display = 'none';
+          success.style.display = 'block';
+          setTimeout(() => {
+              if (currentLesson === 11) {
+                  window.location.href = 'practice.html'; // Redirect to practice page
+              } else {
+                  const nextLesson = `lesson${currentLesson + 1}.html`;
+                  window.location.href = nextLesson; // Redirect to the next lesson
+              }
+          }, 2000);
+      } else {
+          warning.style.display = 'block';
+          success.style.display = 'none';
+      }
+  } 
 }

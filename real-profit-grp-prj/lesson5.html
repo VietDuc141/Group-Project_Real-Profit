@@ -282,6 +282,83 @@
                                     </ul>
                                 </div>
                             </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                  <span class="toggle-symbol">+</span>
+                                  <span class="chapter-title" style="color: red;"><i class="bi bi-pen-fill"></i> Quiz.</span>
+                                </div>
+                                <div class="lesson-content lesson-ques" id="quiz">
+                                    <h3>Question: Basic Cases Determining Trend Reversal.</h3>
+                                    <!-- Question 1 -->
+                                    <div class="question">
+                                        <p><strong>1. What signals the potential support during the formation of a double bottom?</strong></p>
+                                        <label><input type="radio" name="q1" value="wrong"> The closing price is lower than the lowest price of the bottom.</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> The new peak is higher than the previous peak.</label><br>
+                                        <label><input type="radio" name="q1" value="correct"> The closing price of the bottom is higher than the lowest price of the bottom.</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> The correction zone is wider than the first bottom.</label><br>
+                                    </div>
+                                
+                                    <!-- Question 2 -->
+                                    <div class="question">
+                                        <p><strong>2. What confirms a trend reversal in a double bottom pattern?</strong></p>
+                                        <label><input type="radio" name="q2" value="wrong"> The formation of a third bottom below the first two bottoms.</label><br>
+                                        <label><input type="radio" name="q2" value="correct"> A breakout of the intermediate peak confirms the reversal.</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> The price moves sideways after forming the double bottom.</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> A single bottom is sufficient to confirm the reversal.</label><br>
+                                    </div>
+                                
+                                    <!-- Question 3 -->
+                                    <div class="question">
+                                        <p><strong>3. When is a downward trend broken after an upward trend?</strong></p>
+                                        <label><input type="radio" name="q3" value="wrong"> When the price creates a new trough below the current trend.</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> When the price consolidates within the resistance zone.</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> When the price stays below the previous peak for a long time.</label><br>
+                                        <label><input type="radio" name="q3" value="correct"> When the price breaks above the highest peak of the downward trend.</label><br>
+                                    </div>
+                                
+                                    <!-- Question 4 -->
+                                    <div class="question">
+                                        <p><strong>4. What are the conditions for confirming a reversal trend?</strong></p>
+                                        <label><input type="radio" name="q4" value="correct"> The current trend must be broken, and a new opposite trend must be established.</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> The price must touch the support level three times.</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> Only the current trend needs to be broken.</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> The market must remain in a consolidation phase.</label><br>
+                                    </div>
+                                
+                                    <!-- Question 5 -->
+                                    <div class="question">
+                                        <p><strong>5. What is the necessary condition for a downward trend to reverse into an upward trend?</strong></p>
+                                        <label><input type="radio" name="q5" value="wrong"> A series of lower highs and lower lows must form.</label><br>
+                                        <label><input type="radio" name="q5" value="correct"> The price must break above the critical peak.</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> The price must stay below the resistance zone.</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> The market must stop forming new highs.</label><br>
+                                    </div>
+                                
+                                    <!-- Question 6 -->
+                                    <div class="question">
+                                        <p><strong>6. What is a sufficient condition for a reversal trend?</strong></p>
+                                        <label><input type="radio" name="q6" value="wrong"> The current trend must be strong and consistent.</label><br>
+                                        <label><input type="radio" name="q6" value="wrong"> The previous support zone must remain intact.</label><br>
+                                        <label><input type="radio" name="q6" value="wrong"> The price must stay within the correction zone.</label><br>
+                                        <label><input type="radio" name="q6" value="correct"> A new opposite trend must form with higher highs and higher lows (for an uptrend).</label><br>
+                                    </div>
+                                
+                                    <!-- Question 7 -->
+                                    <div class="question">
+                                        <p><strong>7. What is the significance of breaking the highest peak in a downward trend?</strong></p>
+                                        <label><input type="radio" name="q7" value="correct"> It indicates that the downward trend may have reversed into an upward trend.</label><br>
+                                        <label><input type="radio" name="q7" value="wrong"> It confirms that the market has entered a sideways trend.</label><br>
+                                        <label><input type="radio" name="q7" value="wrong"> It means the price is likely to fall further.</label><br>
+                                        <label><input type="radio" name="q7" value="wrong"> It signals a consolidation phase in the current trend.</label><br>
+                                    </div>
+
+                                    <button class="finish-btn" onclick="finishQuiz()">Finish</button>
+                                
+                                    <p class="warning"><i class="bi bi-x-circle-fill"></i> Please answer all questions correctly before proceeding!</p>
+                                    <p class="success"><i class="bi bi-check-circle-fill"></i> Congratulations! Moving to Lesson 6...</p>
+                                </div>
+                            </div>
                         </section>
                           
                     </div>
@@ -301,51 +378,51 @@
                 </div>
                 </section>
                 
-            <footer class="site-footer">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-3 col-10 me-auto mb-4">
-                            <h4 class="text-white mb-3"><a href="index.html">Real </a> Profit</h4>
-                            <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>Real Profit</strong></p>
-                            <br>
-                            <p class="copyright-text">Designed by Group Profit</p>
+                <footer class="site-footer">
+                    <div class="container">
+                        <div class="row">
+        
+                            <div class="col-lg-3 col-10 me-auto mb-4">
+                                <h4 class="text-white mb-3"><a href="index.html">Real</a> Profit</h4>
+                                <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>Real profit</strong></p>
+                                <br>
+                                <p class="copyright-text">Designed by Group Profit</p>
+                            </div>
+        
+                            <div class="col-lg-5 col-8">
+                                <h5 class="text-white mb-3">Sitemap</h5>
+        
+                                <ul class="footer-menu d-flex flex-wrap">
+                                    <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Home</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Learning</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Practice</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">News</a></li>
+                                </ul>
+                            </div>
+        
+                            <div class="col-lg-3 col-4">
+                                <h5 class="text-white mb-3">Social</h5>
+        
+                                <ul class="social-icon">
+        
+                                    <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-skype"></a></li>
+                                </ul>
+                            </div>
+        
                         </div>
-
-                        <div class="col-lg-5 col-8">
-                            <h5 class="text-white mb-3">Sitemap</h5>
-
-                            <ul class="footer-menu d-flex flex-wrap">
-                                <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About</a></li>
-
-                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Products</a></li>
-
-                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy policy</a></li>
-
-                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">FAQs</a></li>
-
-                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-lg-3 col-4">
-                            <h5 class="text-white mb-3">Social</h5>
-
-                            <ul class="social-icon">
-
-                                <li><a href="#" class="social-icon-link bi-youtube"></a></li>
-
-                                <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
-
-                                <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-
-                                <li><a href="#" class="social-icon-link bi-skype"></a></li>
-                            </ul>
-                        </div>
-
                     </div>
-                </div>
-            </footer>
+                </footer>
 
         </main>
             
@@ -358,44 +435,5 @@
         <script src="js/slick.min.js"></script>
         <script src="js/custom.js"></script>
 
-        <script>
-            // OPEN LESSONS
-            function toggleChapter(element) {
-                const lessonContent= element.nextElementSibling;
-                const toggleSymbol = element.querySelector('.toggle-symbol');
-              
-                if (lessonContent.style.display === "none" || !lessonContent.style.display) {
-                  lessonContent.style.display = "block";
-                  toggleSymbol.textContent = "-";
-                } else {
-                  lessonContent.style.display = "none";
-                  toggleSymbol.textContent = "+";
-                }
-              }
-              
-              function toggleAll() {
-                const chapters = document.querySelectorAll('.chapter');
-                const expandAllButton = document.querySelector('.expand-all');
-              
-                chapters.forEach((chapter) => {
-                  const lessonContent = chapter.querySelector('.lesson-content');
-                  const toggleSymbol = chapter.querySelector('.toggle-symbol');
-              
-                  if (expandAllButton.textContent === "Expand All") {
-                    lessonContent.style.display = "block";
-                    toggleSymbol.textContent = "-";
-                  } else {
-                    lessonContent.style.display = "none";
-                    toggleSymbol.textContent = "+";
-                  }
-                });
-              
-                expandAllButton.textContent =
-                  expandAllButton.textContent === "Expand All"
-                    ? "Close all"
-                    : "Expand All";
-              }
-              
-        </script>
     </body>
 </html>
