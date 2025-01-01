@@ -29,6 +29,30 @@
     </head>
 
     <body>
+        <!-- CHAT BOT -->
+        <button class="chatbot-toggler">
+            <img src="images/chatbot/Chat_icon.png" alt="Chatbot Icon" class="chat-icon">
+        </button>
+    
+        <div id="box">
+            <div class="chatbot">
+                <header>
+                    <h2>Chatbot</h2>
+                    <span class="close-btn"> X </span>
+                </header>
+                <ul class="chatbox">
+                    <li class="chat incoming">
+                        <img src="images/chatbot/AiBot_icon.png" alt="Chatbot Icon" class="bot-icon">
+                        <p>Hi there <br>How can I help you today?</p>
+                    </li>
+                </ul>
+    
+                <div class="chat-input">
+                    <textarea placeholder="Enter a message..." required></textarea>
+                    <img src="images/chatbot/Send_icon.png" alt="Chatbot Icon" class="send-icon">
+                </div>
+            </div>
+        </div>
 
         <section class="preloader">
             <div class="spinner">
@@ -76,7 +100,13 @@
                         </ul>
 
                         <div class="d-none d-lg-block">
-                            <a href="loginbox.html" class="bi-person custom-icon me-3"></a>
+                            <div class="profile-icon">
+                                <i class="bi-person custom-icon me-3"></i>
+                                <div class="dropdown">
+                                    <a href="loginbox.html" class="dropdown-item">Login</a>
+                                    <a href="loginbox.html" class="dropdown-item">Logout</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -297,45 +327,7 @@
         <script src="js/jQuery.headroom.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/custom.js"></script>
-
-        <script>
-            // OPEN LESSONS
-            function toggleChapter(element) {
-                const lessonContent= element.nextElementSibling;
-                const toggleSymbol = element.querySelector('.toggle-symbol');
-              
-                if (lessonContent.style.display === "none" || !lessonContent.style.display) {
-                  lessonContent.style.display = "block";
-                  toggleSymbol.textContent = "-";
-                } else {
-                  lessonContent.style.display = "none";
-                  toggleSymbol.textContent = "+";
-                }
-              }
-              
-              function toggleAll() {
-                const chapters = document.querySelectorAll('.chapter');
-                const expandAllButton = document.querySelector('.expand-all');
-              
-                chapters.forEach((chapter) => {
-                  const lessonContent = chapter.querySelector('.lesson-content');
-                  const toggleSymbol = chapter.querySelector('.toggle-symbol');
-              
-                  if (expandAllButton.textContent === "Expand All") {
-                    lessonContent.style.display = "block";
-                    toggleSymbol.textContent = "-";
-                  } else {
-                    lessonContent.style.display = "none";
-                    toggleSymbol.textContent = "+";
-                  }
-                });
-              
-                expandAllButton.textContent =
-                  expandAllButton.textContent === "Expand All"
-                    ? "Close all"
-                    : "Expand All";
-              }
-              
-        </script>
+        <script src="js/chatbot.js"></script>
+        
     </body>
 </html>

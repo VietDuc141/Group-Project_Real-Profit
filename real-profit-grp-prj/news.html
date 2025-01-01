@@ -25,6 +25,30 @@
     </head>
 
     <body>
+        <!-- CHAT BOT -->
+        <button class="chatbot-toggler">
+            <img src="images/chatbot/Chat_icon.png" alt="Chatbot Icon" class="chat-icon">
+        </button>
+    
+        <div id="box">
+            <div class="chatbot">
+                <header>
+                    <h2>Chatbot</h2>
+                    <span class="close-btn"> X </span>
+                </header>
+                <ul class="chatbox">
+                    <li class="chat incoming">
+                        <img src="images/chatbot/AiBot_icon.png" alt="Chatbot Icon" class="bot-icon">
+                        <p>Hi there <br>How can I help you today?</p>
+                    </li>
+                </ul>
+    
+                <div class="chat-input">
+                    <textarea placeholder="Enter a message..." required></textarea>
+                    <img src="images/chatbot/Send_icon.png" alt="Chatbot Icon" class="send-icon">
+                </div>
+            </div>
+        </div>
 
         <section class="preloader">
             <div class="spinner">
@@ -44,10 +68,6 @@
                     <a class="navbar-brand" href="index.html">
                         <strong><span>Real</span> Profit</strong>
                     </a>
-
-                    <div class="d-lg-none">
-                        <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
-                    </div>
 
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mx-auto">
@@ -88,7 +108,13 @@
                         </ul>
 
                         <div class="d-none d-lg-block">
-                            <a href="loginbox.html" class="bi-person custom-icon me-3"></a>
+                            <div class="profile-icon">
+                                <i class="bi-person custom-icon me-3"></i>
+                                <div class="dropdown">
+                                    <a href="loginbox.html" class="dropdown-item">Login</a>
+                                    <a href="loginbox.html" class="dropdown-item">Logout</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -98,15 +124,16 @@
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-10 col-12">
+                        <div class="col-lg-10 col-12 header-info">
                             <h1>
-                                <span class="d-block text-primary">What's happening today ?</span>
+                                <span class="d-block text-primary">News</span>
+                                <span class="d-block text-dark">What's happen <br> today ?</span>
                             </h1>
-                            <h5 class="d-block text-dark">Collection of the
-                                trading market and domestic and international developments</h5>
                         </div>
                     </div>
                 </div>
+
+                <img src="images/learning-slide.jpg" class="header-image img-fluid" alt="">
             </header>
 
 
@@ -231,11 +258,8 @@
         <script src="js/slick.min.js"></script>
         <script src="js/custom.js"></script>
         <script src="js/news.js"></script>
+        <script src="js/chatbot.js"></script>
 
-
-
-
-
-</body>
+    </body>
 
 </html>

@@ -72,7 +72,13 @@
                     </ul>
 
                     <div class="d-none d-lg-block">
-                        <a href="loginbox.html" class="bi-person custom-icon me-3"></a>
+                        <div class="profile-icon">
+                            <i class="bi-person custom-icon me-3"></i>
+                            <div class="dropdown">
+                                <a href="loginbox.html" class="dropdown-item">Login</a>
+                                <a href="loginbox.html" class="dropdown-item">Logout</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,13 +94,10 @@
                             <!-- Google Login Button -->
                             <a href="redirect.php" class="icon">
                                 <i class="bi bi-google"></i> 
-                            </a>
-                            <a href="#" class="icon"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="icon"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="icon"><i class="bi bi-github"></i></a>                        
+                            </a>                       
                         </div>
 
-                        <span>or use your email for registration</span>
+                        <span>Use your email for registration</span>
                         <input type="text" name="name" placeholder="Name" required>
                         <input type="email" name="email"  placeholder="Email" required>
                         <input type="password" name="password" placeholder="Password" required>
