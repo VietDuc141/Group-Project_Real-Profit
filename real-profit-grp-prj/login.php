@@ -2,7 +2,7 @@
 // Database connection
 $servername = "localhost";
 $username = "root"; // Default username for MySQL
-$password = ""; // Default password for MySQL
+$password = "coolguy27122004"; // Default password for MySQL
 $dbname = "my_web_db";
 
 // Create connection

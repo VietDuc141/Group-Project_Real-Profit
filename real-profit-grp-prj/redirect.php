@@ -24,8 +24,8 @@ use Google\Service\Oauth2;
 
 
 // Init configuration for Google OAuth
-$clientID = '';
-$clientSecret = '';
+$clientID = '814351734102-22h1eojcqv5r3d5q4ur1hleust12dbcf.apps.googleusercontent.com';
+$clientSecret = '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';
 $redirectUri = 'http://localhost/real-profit-grp-prj/redirect.php';  // Your redirect URL
 
 // Create Google Client

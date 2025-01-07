@@ -72,12 +72,11 @@
                         </li>
                     </ul>
 
-                    <div class="d-none d-lg-block">
+                    <div class="d-none d-lg-block"><!--login-->
                         <div class="profile-icon">
                             <i class="bi-person custom-icon me-3"></i>
                             <div class="dropdown-log">
-                                <a href="loginbox.html" class="dropdown-item-log">Login</a>
-                                <a href="loginbox.html" class="dropdown-item-log">Logout</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -89,11 +88,11 @@
         <section class="forget-body">
             <div class="forget-container">
                 <div class="form-container">
-                    <form>
+                    <form action="phpmailer.php" method="post">
                         <h2>Forgot Password</h2>
                         <span>Enter your email address below to reset your password.</span>
-                        <input type="email" placeholder="Email" required>
-                        <button type="submit"><a href="changepass.html">Reset Password</a></button>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <button type="submit">Reset Password</a></button>
                     </form>
                 </div>
 
@@ -162,6 +161,7 @@
         <script src="js/jQuery.headroom.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/custom.js"></script>
+        <script src="js/login.js"></script>
 
     </body>
 </html>

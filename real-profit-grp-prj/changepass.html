@@ -82,12 +82,12 @@
         <section class="change-body">
             <div class="change-container">
                 <div class="form-container">
-                    <form>
-                        <h2>Change Password</h2>
+                    <form action="changepass.php" method="post" onsubmit="return validatepassword()">
+                        <h2>New Password</h2>
                         <span>Enter your new password to sign in.</span>
-                        <input type="password" placeholder="New Password" required>
-                        <input type="password" placeholder="New Password Confirm">
-                        <button type="submit"><a href="loginbox.html">Submit</a></button>
+                        <input type="password" name="password" placeholder="New Password" required minlength="8">
+                        <input type="password" name="confirmPassword" placeholder="Confirm New Password" required minlength="8">
+                        <button type="submit">Submit</a></button>
                     </form>
                 </div>
 
@@ -156,6 +156,7 @@
         <script src="js/jQuery.headroom.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/custom.js"></script>
+        <script src="js/validatepassword.js"></script>
 
     </body>
 </html>
