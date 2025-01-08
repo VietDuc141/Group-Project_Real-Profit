@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Lesson6 Page</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/lesson.css">
+        <link rel="stylesheet" href="css/loginbox.css">
+        <link href="css/main.css" rel="stylesheet">
+        
+
+    </head>
+
+    <body>
+        <!-- CHAT BOT -->
+        <button class="chatbot-toggler">
+            <img src="images/chatbot/Chat_icon.png" alt="Chatbot Icon" class="chat-icon">
+        </button>
+    
+        <div id="box">
+            <div class="chatbot">
+                <header>
+                    <h2>Chatbot</h2>
+                    <span class="close-btn"> X </span>
+                </header>
+                <ul class="chatbox">
+                    <li class="chat incoming">
+                        <img src="images/chatbot/AiBot_icon.png" alt="Chatbot Icon" class="bot-icon">
+                        <p>Hi there <br>How can I help you today?</p>
+                    </li>
+                </ul>
+    
+                <div class="chat-input">
+                    <textarea placeholder="Enter a message..." required></textarea>
+                    <img src="images/chatbot/Send_icon.png" alt="Chatbot Icon" class="send-icon">
+                </div>
+            </div>
+        </div>
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <strong><span>Real</span> Profit</strong>
+                    </a>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="learning.html">Learning</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="practice.html">Practice</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="news.html">News</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="faqs.html">FAQs</a>
+                            </li>
+                        </ul>
+
+                        <div class="d-none d-lg-block">
+                            <div class="profile-icon">
+                                <i class="bi-person custom-icon me-3"></i>
+                                <div class="dropdown-log">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="course-overview">
+                <div class="course-container">
+                    <!-- Left Section -->
+                    <div class="course-info">
+                        <a href="learning.html">
+                            <i class="bi bi-arrow-left"></i>
+                            Back
+                        </a>
+                        <h1>Lesson 6 </h1>
+                        <p>Fibonacci Retracement and Extension</p>
+                        <h3>What will you get ?</h3>
+                        <ul class="course-benefits">
+                            <li><i class="bi bi-check-lg"></i> Basic knowledge, foundation of Trading industry</li>
+                            <li><i class="bi bi-check-lg"></i> Core concepts and terms when implementing transactions</li>
+                            <li><i class="bi bi-check-lg"></i> Basic models and architectures when implementing transactions</li>
+                            <li><i class="bi bi-check-lg"></i> Understanding more about effective trading methods and mindset</li>
+                        </ul>
+                        <section class="course-content">
+                            <h3>Lesson contents</h3>
+                            <p>2 parts <span class="expand-all" onclick="toggleAll()">Expand All</span></p>
+                          
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">1. Definition.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p><span>* DEFINITION:</span></p>
+                                    <p>- The Fibonacci indicator was first introduced to the West in 
+                                        the 13th century by Leonardo Pisano Bogollo, an Italian mathematician.
+                                    </p>
+                                    <p>- This sequence exhibits mathematical properties and ratios found in nature, such as in architecture and biology. 
+                                        Because Fibonacci appears universally throughout the universe, it is also present in financial markets.
+                                    </p>
+                                    <p>- This is one of the reasons traders use the Fibonacci sequence in stocks, Forex, and Crypto to 
+                                        identify reversal points, set profit targets, and execute Fibonacci-based trading strategies.
+                                    </p>
+                                    <p><span>* There are two main Fibonacci tools that traders commonly use in trading:</span></p>
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Purpose:</span>
+                                                To identify retracement levels of a trend. Based on personal experience, 
+                                                the key levels to focus on are <span>0.5 and 0.168.</span>
+                                            </p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Purpose:</span>
+                                                To find profit-taking points. The key levels to pay attention to are <span>0.5, 1, and 1.618.</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                          
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">2. HOW TO DRAW FIBONACCI RETRACEMENT ?</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>For an Uptrend:</span></p>
+                                            <p>- After the completion of an upward wave, a downward wave (correction wave) begins. 
+                                                Use the Fibonacci Retracement tool to draw from the <span>Bottom</span> of the wave 
+                                                to the <span>Top</span> of the previous upward wave.
+                                            </p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>For a Downtrend:</span></p>
+                                            <p>- Reverse the process. Draw the Fibonacci Retracement from the <span>Top</span> of the wave to the 
+                                                <span>Bottom</span> of the previous downward wave.
+                                            </p>
+                                        </li>
+                                    </ul>
+
+                                    <p><span>* UPWARD TREND:</span> To draw Fibonacci Retracement in an upward trend, connect three points:</p>
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Point 1:</span> The bottom of the upward wave (start of the wave).</p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Point 2:</span> The top of the upward wave (end of the wave).</p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Point 3:</span> The bottom of the retracement wave (start of the correction).</p>
+                                        </li>
+                                    </ul>
+
+                                    <p><span>* DOWNWARD TREND:</span> For a downward trend, follow the opposite approach:</p>
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Point 1:</span> The top of the downward wave (start of the wave).</p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Point 2:</span> The bottom of the downward wave (end of the wave).</p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Point 3:</span> The top of the retracement wave (start of the correction).</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                  <span class="toggle-symbol">+</span>
+                                  <span class="chapter-title" style="color: red;"><i class="bi bi-pen-fill"></i> Quiz.</span>
+                                </div>
+                                <div class="lesson-content lesson-ques" id="quiz">
+                                    <h3>Question: Fibonacci Retracement and Extension.</h3>
+                                    
+                                    <!-- Question 1 -->
+                                    <div class="question">
+                                        <p><strong>1. Who introduced the Fibonacci indicator to the West?</strong></p>
+                                        <label><input type="radio" name="q1" value="wrong"> Isaac Newton</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> Galileo Galilei</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> Albert Einstein</label><br>
+                                        <label><input type="radio" name="q1" value="correct"> Leonardo Pisano Bogollo</label><br>
+                                    </div>
+
+                                    <!-- Question 2 -->
+                                    <div class="question">
+                                        <p><strong>2. What is the primary purpose of the Fibonacci Retracement tool?</strong></p>
+                                        <label><input type="radio" name="q2" value="wrong"> To calculate the moving average</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> To determine volume levels</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> To predict market news</label><br>
+                                        <label><input type="radio" name="q2" value="correct"> To identify retracement levels of a trend</label><br>
+                                    </div>
+
+                                    <!-- Question 3 -->
+                                    <div class="question">
+                                        <p><strong>3. How do you draw Fibonacci Retracement for an upward trend?</strong></p>
+                                        <label><input type="radio" name="q3" value="correct"> From the bottom of the upward wave to the top of the upward wave</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> From the top of the wave to the bottom of the correction wave</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> From the middle of the upward wave to the correction wave</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> From the top of the upward wave to the previous trendline</label><br>
+                                    </div>
+
+                                    <!-- Question 4 -->
+                                    <div class="question">
+                                        <p><strong>4. Which key Fibonacci levels are typically used to find profit-taking points?</strong></p>
+                                        <label><input type="radio" name="q4" value="wrong"> 0.5, 0.168, and 0.236</label><br>
+                                        <label><input type="radio" name="q4" value="correct"> 0.5, 1, and 1.618</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> 1, 2, and 3</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> 0.618, 0.786, and 1.236</label><br>
+                                    </div>
+
+                                    <!-- Question 5 -->
+                                    <div class="question">
+                                        <p><strong>5. What are the three points used to draw Fibonacci Retracement for a downward trend?</strong></p>
+                                        <label><input type="radio" name="q5" value="wrong"> Bottom of the downward wave, top of the retracement wave, and middle of the wave</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> Top of the retracement wave, middle of the downward wave, and bottom of the wave</label><br>
+                                        <label><input type="radio" name="q5" value="correct"> Top of the downward wave, bottom of the downward wave, and top of the retracement wave</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> Bottom of the downward wave, middle of the wave, and top of the wave</label><br>
+                                    </div>
+
+                                    <button class="finish-btn" onclick="finishQuiz()">Finish</button>
+                                
+                                    <p class="warning"><i class="bi bi-x-circle-fill"></i> Please answer all questions correctly before proceeding!</p>
+                                    <p class="success"><i class="bi bi-check-circle-fill"></i> Congratulations! Moving to Lesson 7...</p>
+                                </div>
+                            </div>
+                        </section>
+                          
+                    </div>
+                
+                    <!-- Right Section -->
+                    <div class="course-summary">
+                        <div class="course-pic" style="background-image: url(images/bg-lesson-s-6.jpg);">
+                            <span>Fibonacci Retracement <br> and Extension</span>
+                        </div>
+                    <h2>Free</h2>
+                    <ul class="course-details">
+                        <li><i class="bi bi-check-all"></i> From new to pro</li>
+                        <li><i class="bi bi-check-all"></i> Total: 11 lessons</li>
+                        <li><i class="bi bi-check-all"></i> Learn everytime - everywhere</li>
+                    </ul>
+                    </div>
+                </div>
+                </section>
+                
+                <footer class="site-footer">
+                    <div class="container">
+                        <div class="row">
+        
+                            <div class="col-lg-3 col-10 me-auto mb-4">
+                                <h4 class="text-white mb-3"><a href="index.html">Real</a> Profit</h4>
+                                <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>Real profit</strong></p>
+                                <br>
+                                <p class="copyright-text">Designed by Group Profit</p>
+                            </div>
+        
+                            <div class="col-lg-5 col-8">
+                                <h5 class="text-white mb-3">Sitemap</h5>
+        
+                                <ul class="footer-menu d-flex flex-wrap">
+                                    <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Home</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Learning</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Practice</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">News</a></li>
+                                </ul>
+                            </div>
+        
+                            <div class="col-lg-3 col-4">
+                                <h5 class="text-white mb-3">Social</h5>
+        
+                                <ul class="social-icon">
+        
+                                    <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-skype"></a></li>
+                                </ul>
+                            </div>
+        
+                        </div>
+                    </div>
+                </footer>
+
+        </main>
+            
+        
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/chatbot.js"></script>
+        <script src="js/login.js"></script>
+        
+    </body>
+</html>

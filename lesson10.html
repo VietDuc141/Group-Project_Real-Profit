@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Lesson10 Page</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/lesson.css">
+        <link rel="stylesheet" href="css/loginbox.css">
+        <link href="css/main.css" rel="stylesheet">
+        
+
+    </head>
+
+    <body>
+        <!-- CHAT BOT -->
+        <button class="chatbot-toggler">
+            <img src="images/chatbot/Chat_icon.png" alt="Chatbot Icon" class="chat-icon">
+        </button>
+    
+        <div id="box">
+            <div class="chatbot">
+                <header>
+                    <h2>Chatbot</h2>
+                    <span class="close-btn"> X </span>
+                </header>
+                <ul class="chatbox">
+                    <li class="chat incoming">
+                        <img src="images/chatbot/AiBot_icon.png" alt="Chatbot Icon" class="bot-icon">
+                        <p>Hi there <br>How can I help you today?</p>
+                    </li>
+                </ul>
+    
+                <div class="chat-input">
+                    <textarea placeholder="Enter a message..." required></textarea>
+                    <img src="images/chatbot/Send_icon.png" alt="Chatbot Icon" class="send-icon">
+                </div>
+            </div>
+        </div>
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <strong><span>Real</span> Profit</strong>
+                    </a>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="learning.html">Learning</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="practice.html">Practice</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="news.html">News</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="faqs.html">FAQs</a>
+                            </li>
+                        </ul>
+
+                        <div class="d-none d-lg-block">
+                            <div class="profile-icon">
+                                <i class="bi-person custom-icon me-3"></i>
+                                <div class="dropdown-log">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="course-overview">
+                <div class="course-container">
+                    <!-- Left Section -->
+                    <div class="course-info">
+                        <a href="learning.html">
+                            <i class="bi bi-arrow-left"></i>
+                            Back
+                        </a>
+                        <h1>Lesson 10 </h1>
+                        <p>Trading Psychology</p>
+                        <h3>What will you get ?</h3>
+                        <ul class="course-benefits">
+                            <li><i class="bi bi-check-lg"></i> Basic knowledge, foundation of Trading industry</li>
+                            <li><i class="bi bi-check-lg"></i> Core concepts and terms when implementing transactions</li>
+                            <li><i class="bi bi-check-lg"></i> Basic models and architectures when implementing transactions</li>
+                            <li><i class="bi bi-check-lg"></i> Understanding more about effective trading methods and mindset</li>
+                        </ul>
+                        <section class="course-content">
+                            <h3>Lesson contents</h3>
+                            <p>3 parts <span class="expand-all" onclick="toggleAll()">Expand All</span></p>
+                          
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">1. What is Trading Psychology ?</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p>- Trading psychology refers to the emotions and mental states 
+                                        traders experience during the trading process. Common emotions 
+                                        include fear, greed, excitement, overconfidence, and anxiety. 
+                                        Mastering trading psychology takes time and is critical for long-term success.
+                                    </p>
+                                    <p>- One of the most dangerous emotions in trading is <span>FOMO (Fear of Missing Out).</span> 
+                                        This fear can lead to impulsive trades that deviate from your strategy.
+                                    </p>
+                                    <p>- To combat FOMO, remind yourself that opportunities are always 
+                                        available in the market and only trade with money you can afford to lose.</p>
+                                </div>
+                            </div>
+                          
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">2. Overcoming Greed.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p>- Greed is a prevalent emotion that can lead to poor decision-making.</p>
+                                    <p>- When greed takes over, traders often over-leverage in an attempt to recover losses quickly.</p>  
+                                    <p>- This behavior can amplify losses.</p>  
+                                    <p>- To avoid greed, always adhere to your trading plan and risk management rules.</p>  
+                                </div>                      
+                            </div>   
+                            
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">3. How to Develop a Successful Trader’s Mindset.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Maintain a Positive Attitude</span></p>
+                                            <ul>
+                                                <li>Staying positive may seem simple, but it’s especially challenging after consecutive losses.</li>
+                                                <li>A positive mindset allows you to leave negativity behind and approach the next trade with clarity and focus.</li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Set Aside Your Ego</span></p>
+                                            <ul>
+                                                <li>Accepting mistakes and cutting losses are essential parts of trading.</li>
+                                                <li>There is no shame in admitting you were wrong.</li>
+                                                <li>Do not attempt to "fight" the market; it is always right.</li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Trade Based on Market Signals, Not Intuition</span></p>
+                                            <ul>
+                                                <li>Avoid entering trades based on gut feelings or emotions.</li>
+                                                <li>Stick to your strategy and only act when the market provides clear signals.</li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Stay Patient and Persistent</span></p>
+                                            <ul>
+                                                <li>Trading is not a quick way to get rich.</li>
+                                                <li>It requires consistent effort, patience, and discipline.</li>
+                                                <li>Success comes from accumulating experience, knowledge, and emotional control over time.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                  <span class="toggle-symbol">+</span>
+                                  <span class="chapter-title" style="color: red;"><i class="bi bi-pen-fill"></i> Quiz.</span>
+                                </div>
+                                <div class="lesson-content lesson-ques" id="quiz">
+                                    <h3>Question: Trading Psychology.</h3>
+                                    
+                                    <!-- Question 1 -->
+                                    <div class="question">
+                                        <p><strong>1. What does trading psychology refer to?</strong></p>
+                                        <label><input type="radio" name="q1" value="correct"> The emotions and mental states traders experience during trading</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> The technical strategies used for trading</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> The market conditions affecting trade volume</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> The financial resources required for trading</label><br>
+                                    </div>
+
+                                    <!-- Question 2 -->
+                                    <div class="question">
+                                        <p><strong>2. What is FOMO, and why is it dangerous in trading?</strong></p>
+                                        <label><input type="radio" name="q2" value="wrong"> Fear of Market Opportunities; it discourages trading</label><br>
+                                        <label><input type="radio" name="q2" value="correct"> Fear of Missing Out; it can lead to impulsive trades</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> Failure of Management Options; it affects risk management</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> Feeling of Market Overload; it reduces focus</label><br>
+                                    </div>
+
+                                    <!-- Question 3 -->
+                                    <div class="question">
+                                        <p><strong>3. How can traders combat greed in trading?</strong></p>
+                                        <label><input type="radio" name="q3" value="wrong"> Over-leverage to recover losses quickly</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> Trade based on intuition to maximize gains</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> Avoid using stop-loss orders to give trades more room</label><br>
+                                        <label><input type="radio" name="q3" value="correct"> Adhere to their trading plan and risk management rules</label><br>
+                                    </div>
+
+                                    <!-- Question 4 -->
+                                    <div class="question">
+                                        <p><strong>4. Why is maintaining a positive attitude important in trading?</strong></p>
+                                        <label><input type="radio" name="q4" value="wrong"> It guarantees success in every trade</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> It eliminates the need for a trading strategy</label><br>
+                                        <label><input type="radio" name="q4" value="correct"> It helps traders leave negativity behind and approach the next trade with clarity</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> It prevents market volatility from affecting trades</label><br>
+                                    </div>
+
+                                    <!-- Question 5 -->
+                                    <div class="question">
+                                        <p><strong>5. What does setting aside your ego mean in trading?</strong></p>
+                                        <label><input type="radio" name="q5" value="correct"> Accepting mistakes and cutting losses when necessary</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> Fighting the market to prove your strategy is correct</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> Ignoring market signals to follow intuition</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> Relying on luck to achieve trading success</label><br>
+                                    </div>
+
+                                    <!-- Question 6 -->
+                                    <div class="question">
+                                        <p><strong>6. Why should trades be based on market signals and not intuition?</strong></p>
+                                        <label><input type="radio" name="q6" value="wrong"> Intuition guarantees higher success rates</label><br>
+                                        <label><input type="radio" name="q6" value="wrong"> Intuition removes the need for technical analysis</label><br>
+                                        <label><input type="radio" name="q6" value="wrong"> Market signals are unreliable for most trades</label><br>
+                                        <label><input type="radio" name="q6" value="correct"> Market signals provide objective and clear entry points</label><br>
+                                    </div>
+
+                                    <!-- Question 7 -->
+                                    <div class="question">
+                                        <p><strong>7. What is required to develop a successful trader's mindset?</strong></p>
+                                        <label><input type="radio" name="q7" value="wrong"> High leverage and frequent trades</label><br>
+                                        <label><input type="radio" name="q7" value="correct"> Consistent effort, patience, and discipline</label><br>
+                                        <label><input type="radio" name="q7" value="wrong"> Eliminating all emotions from trading</label><br>
+                                        <label><input type="radio" name="q7" value="wrong"> Avoiding losses by never entering trades</label><br>
+                                    </div>
+
+                                    <button class="finish-btn" onclick="finishQuiz()">Finish</button>
+                                
+                                    <p class="warning"><i class="bi bi-x-circle-fill"></i> Please answer all questions correctly before proceeding!</p>
+                                    <p class="success"><i class="bi bi-check-circle-fill"></i> Congratulations! Moving to Lesson 11...</p>
+                                </div>
+                            </div>
+                        </section>
+                          
+                    </div>
+                
+                    <!-- Right Section -->
+                    <div class="course-summary">
+                        <div class="course-pic" style="background-image: url(images/bg-lesson-s-10.jpg);">
+                            <span>Trading Psychology</span>
+                        </div>
+                    <h2>Free</h2>
+                    <ul class="course-details">
+                        <li><i class="bi bi-check-all"></i> From new to pro</li>
+                        <li><i class="bi bi-check-all"></i> Total: 11 lessons</li>
+                        <li><i class="bi bi-check-all"></i> Learn everytime - everywhere</li>
+                    </ul>
+                    </div>
+                </div>
+                </section>
+                
+                <footer class="site-footer">
+                    <div class="container">
+                        <div class="row">
+        
+                            <div class="col-lg-3 col-10 me-auto mb-4">
+                                <h4 class="text-white mb-3"><a href="index.html">Real</a> Profit</h4>
+                                <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>Real profit</strong></p>
+                                <br>
+                                <p class="copyright-text">Designed by Group Profit</p>
+                            </div>
+        
+                            <div class="col-lg-5 col-8">
+                                <h5 class="text-white mb-3">Sitemap</h5>
+        
+                                <ul class="footer-menu d-flex flex-wrap">
+                                    <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Home</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Learning</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Practice</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">News</a></li>
+                                </ul>
+                            </div>
+        
+                            <div class="col-lg-3 col-4">
+                                <h5 class="text-white mb-3">Social</h5>
+        
+                                <ul class="social-icon">
+        
+                                    <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-skype"></a></li>
+                                </ul>
+                            </div>
+        
+                        </div>
+                    </div>
+                </footer>
+
+        </main>
+            
+        
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/chatbot.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>

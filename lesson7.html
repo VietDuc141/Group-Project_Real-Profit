@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Lesson7 Page</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/lesson.css">
+        <link rel="stylesheet" href="css/loginbox.css">
+        <link href="css/main.css" rel="stylesheet">
+        
+
+    </head>
+
+    <body>
+        <!-- CHAT BOT -->
+        <button class="chatbot-toggler">
+            <img src="images/chatbot/Chat_icon.png" alt="Chatbot Icon" class="chat-icon">
+        </button>
+    
+        <div id="box">
+            <div class="chatbot">
+                <header>
+                    <h2>Chatbot</h2>
+                    <span class="close-btn"> X </span>
+                </header>
+                <ul class="chatbox">
+                    <li class="chat incoming">
+                        <img src="images/chatbot/AiBot_icon.png" alt="Chatbot Icon" class="bot-icon">
+                        <p>Hi there <br>How can I help you today?</p>
+                    </li>
+                </ul>
+    
+                <div class="chat-input">
+                    <textarea placeholder="Enter a message..." required></textarea>
+                    <img src="images/chatbot/Send_icon.png" alt="Chatbot Icon" class="send-icon">
+                </div>
+            </div>
+        </div>
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <strong><span>Real</span> Profit</strong>
+                    </a>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="learning.html">Learning</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="practice.html">Practice</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="news.html">News</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="faqs.html">FAQs</a>
+                            </li>
+                        </ul>
+
+                        <div class="d-none d-lg-block">
+                            <div class="profile-icon">
+                                <i class="bi-person custom-icon me-3"></i>
+                                <div class="dropdown-log">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="course-overview">
+                <div class="course-container">
+                    <!-- Left Section -->
+                    <div class="course-info">
+                        <a href="learning.html">
+                            <i class="bi bi-arrow-left"></i>
+                            Back
+                        </a>
+                        <h1>Lesson 7 </h1>
+                        <p>Exponential Moving Average (EMA)</p>
+                        <h3>What will you get ?</h3>
+                        <ul class="course-benefits">
+                            <li><i class="bi bi-check-lg"></i> Basic knowledge, foundation of Trading industry</li>
+                            <li><i class="bi bi-check-lg"></i> Core concepts and terms when implementing transactions</li>
+                            <li><i class="bi bi-check-lg"></i> Basic models and architectures when implementing transactions</li>
+                            <li><i class="bi bi-check-lg"></i> Understanding more about effective trading methods and mindset</li>
+                        </ul>
+                        <section class="course-content">
+                            <h3>Lesson contents</h3>
+                            <p>4 parts <span class="expand-all" onclick="toggleAll()">Expand All</span></p>
+                          
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">1. What is a Moving Average (MA) ?</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p>- The Moving Average (MA) is the simplest indicator in the entire system of 
+                                        indicators available in the market.
+                                    </p>
+                                    <p>- However, it is also the most essential one, indispensable on a 
+                                        trader's chart because it reflects the price movements most clearly.
+                                    </p>
+                                    <p>- MA, or Moving Average, is a technical analysis indicator used in 
+                                        financial markets such as stocks, forex, and cryptocurrencies.
+                                    </p>
+                                    <p>- It represents the average value of prices over a specific period.</p>
+                                    <p>- The MA is considered a lagging indicator, and its primary function is to smooth price data.</p>
+                                    <p><span>- There are three commonly used types of MAs: MA, EMA, and SMA.</span></p>
+                                    <p>- Among these, EMA (Exponential Moving Average) is preferred because it reacts more quickly to market price changes.</p>
+
+                                    <p><span>* Steps to adjust the EMA settings:</span></p>
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p>Determine the desired time frame or period.</p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p>Configure the EMA indicator with the appropriate parameters based on your trading strategy.</p>
+                                        </li>
+                                    </ul>
+
+                                    <p><span>* How to Use the EMA (Exponential Moving Average)</span></p>
+                                    <p>There are many EMA parameters available, such as 25, 34, 50, 89, 100, 150, 200, etc. 
+                                        Personally, I use <span>EMA 89</span> and <span>EMA 200.</span></p>
+                                </div>
+                            </div>
+                          
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">2. Identifying Market Trends with EMA.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Uptrend:</span></p>
+                                            <ul>
+                                                <li>When the price is above both EMA 89 and EMA 200, the market is in an uptrend.</li>
+                                                <li>Focus only on <span>Long (Buy)</span> entries.</li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Downtrend:</span></p>
+                                            <ul>
+                                                <li>When the price is below both EMA 89 and EMA 200, the market is in a downtrend.</li>
+                                                <li>Focus only on <span>Short (Sell)</span> entries.</li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p><span>Sideways Market:</span></p>
+                                            <ul>
+                                                <li>When the price moves up and down across the EMAs, the market is sideways (consolidation).</li>
+                                                <li>It is advisable to stay out of the market during this phase.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">3. Using EMA for Entries.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p>- In a trending market, the EMA is used to time entries:</p>
+                                    <ul>
+                                        <li><span>Uptrend:</span> Wait for the price to retrace back to the two EMAs and then take a <span>Long</span> position.</li>
+                                        <li><span>Downtrend</span> Wait for the price to retrace back to the two EMAs and then take a <span>Short</span> position.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">4. EMA Crossovers for Trend Reversals.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p>- When EMA 89 crosses EMA 200, it indicates a <span>trend reversal.</span></p>
+                                    <ul>
+                                        <li><span>Bullish crossover</span> (EMA 89 crosses above EMA 200): Signals a potential uptrend.</li>
+                                        <li><span>Bearish crossover</span> (EMA 89 crosses below EMA 200): Signals a potential downtrend.</li>
+                                    </ul>
+                                </div>
+                            </div>    
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                  <span class="toggle-symbol">+</span>
+                                  <span class="chapter-title" style="color: red;"><i class="bi bi-pen-fill"></i> Quiz.</span>
+                                </div>
+                                <div class="lesson-content lesson-ques" id="quiz">
+                                    <h3>Question: Exponential Moving Average (EMA).</h3>
+                                    
+                                    <!-- Question 1 -->
+                                    <div class="question">
+                                        <p><strong>1. What is the primary function of the Moving Average (MA) indicator?</strong></p>
+                                        <label><input type="radio" name="q1" value="wrong"> To predict future price movements</label><br>
+                                        <label><input type="radio" name="q1" value="correct"> To smooth price data</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> To eliminate lag in market data</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> To display support and resistance levels</label><br>
+                                    </div>
+
+                                    <!-- Question 2 -->
+                                    <div class="question">
+                                        <p><strong>2. Which type of Moving Average reacts more quickly to market price changes?</strong></p>
+                                        <label><input type="radio" name="q2" value="correct"> Exponential Moving Average (EMA)</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> Simple Moving Average (SMA)</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> Weighted Moving Average (WMA)</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> Moving Average Convergence Divergence (MACD)</label><br>
+                                    </div>
+
+                                    <!-- Question 3 -->
+                                    <div class="question">
+                                        <p><strong>3. What indicates an uptrend using EMA 89 and EMA 200?</strong></p>
+                                        <label><input type="radio" name="q3" value="wrong"> The price is below both EMA 89 and EMA 200</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> EMA 89 crosses below EMA 200</label><br>
+                                        <label><input type="radio" name="q3" value="correct"> The price is above both EMA 89 and EMA 200</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> EMA 89 and EMA 200 are moving sideways</label><br>
+                                    </div>
+
+                                    <!-- Question 4 -->
+                                    <div class="question">
+                                        <p><strong>4. What is the significance of a bullish crossover of EMA 89 and EMA 200?</strong></p>
+                                        <label><input type="radio" name="q4" value="correct"> Signals a potential uptrend</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> Signals a potential downtrend</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> Indicates market consolidation</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> Confirms a sideways market</label><br>
+                                    </div>
+
+                                    <!-- Question 5 -->
+                                    <div class="question">
+                                        <p><strong>5. What is the recommended strategy during a sideways market?</strong></p>
+                                        <label><input type="radio" name="q5" value="wrong"> Take Long positions only</label><br>
+                                        <label><input type="radio" name="q5" value="correct"> Stay out of the market</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> Take Short positions only</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> Trade aggressively in both directions</label><br>
+                                    </div>
+
+                                    <!-- Question 6 -->
+                                    <div class="question">
+                                        <p><strong>6. When should a trader enter a Long position in an uptrend using EMA?</strong></p>
+                                        <label><input type="radio" name="q6" value="wrong"> When the price is at its peak</label><br>
+                                        <label><input type="radio" name="q6" value="wrong"> When EMA 89 crosses below EMA 200</label><br>
+                                        <label><input type="radio" name="q6" value="wrong"> When the price stays above EMA 200 for three consecutive days</label><br>
+                                        <label><input type="radio" name="q6" value="correct"> When the price retraces back to the two EMAs</label><br>
+                                    </div>
+
+                                    <!-- Question 7 -->
+                                    <div class="question">
+                                        <p><strong>7. What does a bearish crossover of EMA 89 and EMA 200 indicate?</strong></p>
+                                        <label><input type="radio" name="q7" value="wrong"> A continuation of the uptrend</label><br>
+                                        <label><input type="radio" name="q7" value="wrong"> A reversal to a sideways market</label><br>
+                                        <label><input type="radio" name="q7" value="correct"> A potential downtrend</label><br>
+                                        <label><input type="radio" name="q7" value="wrong"> No significant trend change</label><br>
+                                    </div>
+
+                                    <button class="finish-btn" onclick="finishQuiz()">Finish</button>
+                                
+                                    <p class="warning"><i class="bi bi-x-circle-fill"></i> Please answer all questions correctly before proceeding!</p>
+                                    <p class="success"><i class="bi bi-check-circle-fill"></i> Congratulations! Moving to Lesson 8...</p>
+                                </div>
+                            </div>
+                        </section>
+                          
+                    </div>
+                
+                    <!-- Right Section -->
+                    <div class="course-summary">
+                        <div class="course-pic" style="background-image: url(images/bg-lesson-s-8.jpg);">   
+                            <span>Exponential Moving Average <br> (EMA)</span>
+                        </div>
+                    <h2>Free</h2>
+                    <ul class="course-details">
+                        <li><i class="bi bi-check-all"></i> From new to pro</li>
+                        <li><i class="bi bi-check-all"></i> Total: 11 lessons</li>
+                        <li><i class="bi bi-check-all"></i> Learn everytime - everywhere</li>
+                    </ul>
+                    </div>
+                </div>
+                </section>
+                
+                <footer class="site-footer">
+                    <div class="container">
+                        <div class="row">
+        
+                            <div class="col-lg-3 col-10 me-auto mb-4">
+                                <h4 class="text-white mb-3"><a href="index.html">Real</a> Profit</h4>
+                                <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>Real profit</strong></p>
+                                <br>
+                                <p class="copyright-text">Designed by Group Profit</p>
+                            </div>
+        
+                            <div class="col-lg-5 col-8">
+                                <h5 class="text-white mb-3">Sitemap</h5>
+        
+                                <ul class="footer-menu d-flex flex-wrap">
+                                    <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Home</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Learning</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Practice</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">News</a></li>
+                                </ul>
+                            </div>
+        
+                            <div class="col-lg-3 col-4">
+                                <h5 class="text-white mb-3">Social</h5>
+        
+                                <ul class="social-icon">
+        
+                                    <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-skype"></a></li>
+                                </ul>
+                            </div>
+        
+                        </div>
+                    </div>
+                </footer>
+
+        </main>
+            
+        
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/chatbot.js"></script>
+        <script src="js/login.js"></script>
+        
+            
+    </body>
+</html>

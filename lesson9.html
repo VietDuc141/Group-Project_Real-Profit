@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Lesson9 Page</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/lesson.css">
+        <link rel="stylesheet" href="css/loginbox.css">
+        <link href="css/main.css" rel="stylesheet">
+        
+
+    </head>
+
+    <body>
+        <!-- CHAT BOT -->
+        <button class="chatbot-toggler">
+            <img src="images/chatbot/Chat_icon.png" alt="Chatbot Icon" class="chat-icon">
+        </button>
+    
+        <div id="box">
+            <div class="chatbot">
+                <header>
+                    <h2>Chatbot</h2>
+                    <span class="close-btn"> X </span>
+                </header>
+                <ul class="chatbox">
+                    <li class="chat incoming">
+                        <img src="images/chatbot/AiBot_icon.png" alt="Chatbot Icon" class="bot-icon">
+                        <p>Hi there <br>How can I help you today?</p>
+                    </li>
+                </ul>
+    
+                <div class="chat-input">
+                    <textarea placeholder="Enter a message..." required></textarea>
+                    <img src="images/chatbot/Send_icon.png" alt="Chatbot Icon" class="send-icon">
+                </div>
+            </div>
+        </div>
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <strong><span>Real</span> Profit</strong>
+                    </a>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="learning.html">Learning</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="practice.html">Practice</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="news.html">News</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="faqs.html">FAQs</a>
+                            </li>
+                        </ul>
+
+                        <div class="d-none d-lg-block">
+                            <div class="profile-icon">
+                                <i class="bi-person custom-icon me-3"></i>
+                                <div class="dropdown-log">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="course-overview">
+                <div class="course-container">
+                    <!-- Left Section -->
+                    <div class="course-info">
+                        <a href="learning.html">
+                            <i class="bi bi-arrow-left"></i>
+                            Back
+                        </a>
+                        <h1>Lesson 9 </h1>
+                        <p>Money Management</p>
+                        <h3>What will you get ?</h3>
+                        <ul class="course-benefits">
+                            <li><i class="bi bi-check-lg"></i> Basic knowledge, foundation of Trading industry</li>
+                            <li><i class="bi bi-check-lg"></i> Core concepts and terms when implementing transactions</li>
+                            <li><i class="bi bi-check-lg"></i> Basic models and architectures when implementing transactions</li>
+                            <li><i class="bi bi-check-lg"></i> Understanding more about effective trading methods and mindset</li>
+                        </ul>
+                        <section class="course-content">
+                            <h3>Lesson contents</h3>
+                            <p>3 parts <span class="expand-all" onclick="toggleAll()">Expand All</span></p>
+                          
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">1. What is money management ?</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <p>- Money management involves managing your funds to protect your capital, 
+                                        minimize risks, and ensure sustainable profits over the long term.
+                                    </p>
+                                </div>
+                            </div>
+                          
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">2. Example.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <ul>
+                                        <li style="list-style: decimal;">
+                                            <p>You deposit <span>$1,000</span>, making your total account balance <span>$1,000</span>.</p>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p>- For a single trade:</p>
+                                            <ul>
+                                                <li>You use <span>$50</span> as margin.</li>
+                                                <li>You set a <span>Stop Loss (SL)</span> of <span>-50% of $50,</span> 
+                                                    meaning a loss of <span>$25</span> if the trade goes against you.
+                                                </li>
+                                                <li>You set a minimum <span>Take Profit (TP) of +50% of $50,</span> 
+                                                    meaning a profit of <span>$25</span> if the trade succeeds.
+                                                </li>
+                                                <li>Alternatively, you can extend profits (let them run) to 100% or 
+                                                    even 1000% of the trade margin <span>(+$50 or +$500).</span></li>
+                                            </ul>
+                                        </li>
+                                        <li style="list-style: decimal;">
+                                            <p>In this scenario, if the trade loses, your maximum loss is $25. However, 
+                                                your profit potential is <span>$25, $50, or $500,</span> depending on your strategy.</p>
+                                        </li>
+                                    </ul>      
+                                </div>                      
+                            </div>   
+                            
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                    <span class="toggle-symbol">+</span>
+                                    <span class="chapter-title">3. Money Management Strategy.</span>
+                                </div>
+                                <div class="lesson-content">
+                                    <ul>
+                                        <li>Treat your account balance as <span>100%.</span></li>
+                                        <li>For each trade, allocate <span>5% of your account balance.</span></li>
+                                        <li>Set your <span>Stop Loss (SL)</span> to a maximum loss of <span>-50% of the allocated amount.</span></li>
+                                        <li>Set your <span>Take Profit (TP)</span> to a minimum gain of <span>+50% of the allocated amount.</span></li>
+                                        <li>You can let profits run freely to <span>100% - 1000%</span> of the trade margin if the trend favors you.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="chapter">
+                                <div class="chapter-header" onclick="toggleChapter(this)">
+                                  <span class="toggle-symbol">+</span>
+                                  <span class="chapter-title" style="color: red;"><i class="bi bi-pen-fill"></i> Quiz.</span>
+                                </div>
+                                <div class="lesson-content lesson-ques" id="quiz">
+                                    <h3>Question: Money Management.</h3>
+                                    
+                                    <!-- Question 1 -->
+                                    <div class="question">
+                                        <p><strong>1. What is the primary goal of money management?</strong></p>
+                                        <label><input type="radio" name="q1" value="wrong"> To maximize profits without considering risks</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> To predict market trends with high accuracy</label><br>
+                                        <label><input type="radio" name="q1" value="correct"> To protect capital, minimize risks, and ensure sustainable profits</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> To allocate all funds into a single trade</label><br>
+                                    </div>
+
+                                    <!-- Question 2 -->
+                                    <div class="question">
+                                        <p><strong>2. Why is it important to set a Stop Loss (SL) in trading?</strong></p>
+                                        <label><input type="radio" name="q2" value="wrong"> To increase profits</label><br>
+                                        <label><input type="radio" name="q2" value="correct"> To limit potential losses in case the trade goes against you</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> To remove all risks from trading</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> To ensure a guaranteed win in every trade</label><br>
+                                    </div>
+
+                                    <!-- Question 3 -->
+                                    <div class="question">
+                                        <p><strong>3. What percentage of your account balance is recommended to allocate for each trade?</strong></p>
+                                        <label><input type="radio" name="q3" value="wrong"> 10%</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> 20%</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> 50%</label><br>
+                                        <label><input type="radio" name="q3" value="correct"> 5%</label><br>
+                                    </div>
+
+                                    <!-- Question 4 -->
+                                    <div class="question">
+                                        <p><strong>4. How is the Stop Loss (SL) typically set according to the strategy?</strong></p>
+                                        <label><input type="radio" name="q4" value="correct"> Maximum loss of -50% of the allocated trade amount</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> Maximum loss of -100% of the total account balance</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> Maximum loss of -10% of the allocated trade amount</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> No Stop Loss is set</label><br>
+                                    </div>
+
+                                    <!-- Question 5 -->
+                                    <div class="question">
+                                        <p><strong>5. What is the profit potential if the trade trend strongly favors you?</strong></p>
+                                        <label><input type="radio" name="q5" value="wrong"> Exactly 50% of the trade margin</label><br>
+                                        <label><input type="radio" name="q5" value="correct"> 100%-1000% of the trade margin</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> A fixed amount of $100</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> No limit to potential losses or gains</label><br>
+                                    </div>
+
+                                    <button class="finish-btn" onclick="finishQuiz()">Finish</button>
+                                
+                                    <p class="warning"><i class="bi bi-x-circle-fill"></i> Please answer all questions correctly before proceeding!</p>
+                                    <p class="success"><i class="bi bi-check-circle-fill"></i> Congratulations! Moving to Lesson 10...</p>
+                                </div>
+                            </div>
+                        </section>
+                          
+                    </div>
+                
+                    <!-- Right Section -->
+                    <div class="course-summary">
+                        <div class="course-pic" style="background-image: url(images/bg-lesson-s-9.jpg);">
+                            <span>Money Management</span>
+                        </div>
+                    <h2>Free</h2>
+                    <ul class="course-details">
+                        <li><i class="bi bi-check-all"></i> From new to pro</li>
+                        <li><i class="bi bi-check-all"></i> Total: 11 lessons</li>
+                        <li><i class="bi bi-check-all"></i> Learn everytime - everywhere</li>
+                    </ul>
+                    </div>
+                </div>
+                </section>
+                
+                <footer class="site-footer">
+                    <div class="container">
+                        <div class="row">
+        
+                            <div class="col-lg-3 col-10 me-auto mb-4">
+                                <h4 class="text-white mb-3"><a href="index.html">Real</a> Profit</h4>
+                                <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>Real profit</strong></p>
+                                <br>
+                                <p class="copyright-text">Designed by Group Profit</p>
+                            </div>
+        
+                            <div class="col-lg-5 col-8">
+                                <h5 class="text-white mb-3">Sitemap</h5>
+        
+                                <ul class="footer-menu d-flex flex-wrap">
+                                    <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About Us</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Home</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Learning</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Practice</a></li>
+        
+                                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">News</a></li>
+                                </ul>
+                            </div>
+        
+                            <div class="col-lg-3 col-4">
+                                <h5 class="text-white mb-3">Social</h5>
+        
+                                <ul class="social-icon">
+        
+                                    <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+        
+                                    <li><a href="#" class="social-icon-link bi-skype"></a></li>
+                                </ul>
+                            </div>
+        
+                        </div>
+                    </div>
+                </footer>
+
+        </main>
+            
+        
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/chatbot.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>
