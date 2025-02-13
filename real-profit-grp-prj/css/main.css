@@ -964,7 +964,7 @@ button:focus:not(:focus-visible) {
   color: var(--dark-color);
   font-size: 15px;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 5rem;
 }
 
 .card-details span {
@@ -1004,6 +1004,7 @@ button:focus:not(:focus-visible) {
       width: 100%;
       height: 100%;
       border-radius: 0;
+      z-index: 1000;
   }
   .chatbot .chatbox {
       height: 99%;
@@ -1027,7 +1028,7 @@ button:focus:not(:focus-visible) {
   justify-content: center;
   outline: none;
   cursor: pointer;
-  background: yellow;
+  background: linear-gradient(45deg, #ffd699, #e65100);
   border-radius: 50%;
   transition: all 0.2s ease;
 }
@@ -1065,7 +1066,7 @@ button:focus:not(:focus-visible) {
 }
 
 .chatbot header {
-  background: rgb(65, 96, 196);
+  background: linear-gradient(45deg, #ff9800, #ffeb3b);
   padding: 16px 0;
   text-align: center;
   position: relative;
@@ -1074,7 +1075,7 @@ button:focus:not(:focus-visible) {
 }
 
 .chatbot header h2 {
-  color: #fff;
+  color: var(--dark-color);
   font-size: 1.4rem;
 }
 
@@ -1103,7 +1104,7 @@ button:focus:not(:focus-visible) {
   width: 32px;
   color:#fff;
   align-self: flex-end;
-  background: yellow;
+  background: var(--white-color);
   text-align: center;
   line-height: 32px;
   border-radius: 5px;

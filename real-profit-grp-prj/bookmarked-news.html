@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Bookmarked News</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/loginbox.css">
+
+</head>
+
+<body>
+
+  <button class="chatbot-toggler">
+    <img src="images/chatbot/Chat_icon.png" alt="Chatbot Icon" class="chat-icon">
+  </button>
+
+  <div id="box">
+    <div class="chatbot">
+      <header>
+        <h2>Chatbot</h2>
+        <span class="close-btn"> X </span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <img src="images/chatbot/AiBot_icon.png" alt="Chatbot Icon" class="bot-icon">
+          <p>Hi there <br>How can I help you today?</p>
+        </li>
+      </ul>
+
+      <div class="chat-input">
+        <textarea placeholder="Enter a message..." required></textarea>
+        <img src="images/chatbot/Send_icon.png" alt="Chatbot Icon" class="send-icon">
+      </div>
+    </div>
+  </div>
+
+  <section class="preloader">
+    <div class="spinner">
+      <span class="sk-inner-circle"></span>
+    </div>
+  </section>
+
+  <main>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="index.html">
+          <strong><span>Real</span> Profit</strong>
+        </a>
+
+        <div class="d-lg-none">
+          <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="learning.html">Learning</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="practice.html">Practice</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="news.html" id="dropdownMenuButton" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                News
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item hover-link" href="trading.html">Trading</a></li>
+                <li><a class="dropdown-item hover-link" href="economy.html">Economy</a></li>
+                <li><a class="dropdown-item hover-link" href="technology.html">Technology</a></li>
+                <li><a class="dropdown-item hover-link" href="bitcoin.html">Bitcoin</a></li>
+                <li><a class="dropdown-item" href="bookmarked-news.html">Bookmarked</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="faqs.html">FAQs</a>
+            </li>
+          </ul>
+
+          <div class="d-none d-lg-block">
+            <div class="profile-icon">
+              <i class="bi-person custom-icon me-3"></i>
+              <div class="dropdown-log">
+                <a href="loginbox.html" class="dropdown-item-log">Login</a>
+                <a href="loginbox.html" class="dropdown-item-log">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="site-header section-padding d-flex justify-content-center align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-12">
+            <h1>
+              <span class="d-block text-primary">Bookmarked News</span>
+            </h1>
+            <h5 class="d-block text-dark">A collection of your bookmarked news articles</h5>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="products section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="mb-5">Your Bookmarked News</h2>
+          </div>
+        </div>
+
+        <div class="row" id="bookmarked-news">
+          </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row" id="footer-cards-container"></div>
+      <div class="col-lg-3 col-10 me-auto mb-4">
+        <h4 class="text-white mb-3"><a href="index.html">Little</a> Fashion</h4>
+        <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2022 <strong>Little Fashion</strong></p>
+        <br>
+        <p class="copyright-text">Designed by <a href="https://www.tooplate.com/" target="_blank">Tooplate</a></p>
+      </div>
+
+      <div class="col-lg-5 col-8">
+        <h5 class="text-white mb-3">Sitemap</h5>
+
+        <ul class="footer-menu d-flex flex-wrap">
+          <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">Story</a></li>
+          <li class="footer-menu-item"><a href="#" class="footer-menu-link">Products</a></li>
+          <li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy policy</a></li>
+          <li class="footer-menu-item"><a href="#" class="footer-menu-link">FAQs</a></li>
+          <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-4">
+        <h5 class="text-white mb-3">Social</h5>
+
+        <ul class="social-icon">
+          <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+          <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+          <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+          <li><a href="#" class="social-icon-link bi-skype"></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/Headroom.js"></script>
+  <script src="js/jQuery.headroom.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/chatbot.js"></script>
+
+  <script>
+$(document).ready(function () {
+    const bookmarkedNewsContainer = $('#bookmarked-news');
+
+    // Show a loading spinner
+    bookmarkedNewsContainer.html('<div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>');
+
+    // Fetch bookmarks via AJAX
+    $.ajax({
+        url: 'get_bookmarks.php',
+        type: 'GET',
+        dataType: 'json', // Expect JSON response
+        success: function (bookmarks) {
+            bookmarkedNewsContainer.empty();
+
+            if (bookmarks.length === 0) {
+                bookmarkedNewsContainer.html('<p>No bookmarks found.</p>');
+            } else {
+                bookmarks.forEach(bookmark => {
+                    const newsCard = `
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <a href="${bookmark.url}" class="news-link">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="${bookmark.image}" alt="${bookmark.title}" class="news-img">
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 class="news-title">${bookmark.title}</h3>
+                                        <h6 class="news-source">${bookmark.source} · ${new Date(bookmark.published_at).toLocaleString()}</h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    `;
+                    bookmarkedNewsContainer.append(newsCard);
+                });
+            }
+        },
+        error: function (xhr, status, error) {
+            bookmarkedNewsContainer.empty();
+            bookmarkedNewsContainer.html('<p>Error fetching bookmarks: ' + error + '</p>');
+            console.error("Error details:", xhr, status, error);
+        }
+    });
+});
+  </script>
+  
+</body>
+
+</html>

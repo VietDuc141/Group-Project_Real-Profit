@@ -54,7 +54,7 @@
     </div>
 
     <body>
-
+        <!-- LESSON -->
         <section class="preloader">
             <div class="spinner">
                 <span class="sk-inner-circle"></span>
@@ -104,7 +104,8 @@
                             <div class="profile-icon">
                                 <i class="bi-person custom-icon me-3"></i>
                                 <div class="dropdown-log">
-                                    
+                                    <a href="loginbox.html" class="dropdown-item-log" id="profile-text">Login</a>
+                                    <a href="loginbox.html" class="dropdown-item-log">Logout</a>
                                 </div>
                             </div>
                         </div>
@@ -135,6 +136,11 @@
                             <h2 class="mb-5">Free <span>Lessons</span></h2>
                         </div>
                     </div>
+                    
+                    <div class="progress-bar-container">
+                        <progress id="progress-bar" value="0" max="100"></progress>
+                        <p id="progress-text">Progress: 0%</p>
+                    </div>
                 </div>
 
                 <div class="course-section">
@@ -148,9 +154,6 @@
                                 <div class="card-details">
                                     <p>Mindset about trading</p>
                                     <span>Free</span>
-                                    <div class="info">
-                                        <span><i class="bi bi-people-fill"></i> 131.987</span>
-                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -163,9 +166,6 @@
                                 <div class="card-details">
                                     <p>Japanese Candlesticks</p>
                                     <span>Free</span>
-                                    <div class="info">
-                                        <span><i class="bi bi-people-fill"></i> 31.806</span>
-                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -178,9 +178,6 @@
                                 <div class="card-details">
                                     <p>Resistance and Support</p>
                                     <span>Free</span>
-                                    <div class="info">
-                                        <span><i class="bi bi-people-fill"></i> 204.432</span>
-                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -193,9 +190,6 @@
                                 <div class="card-details">
                                     <p>Trend </p>
                                     <span>Free</span>
-                                <div class="info">
-                                        <span><i class="bi bi-people-fill"></i> 204.432</span>
-                                </div>
                                 </div>
                             </div>
                         </a>
@@ -208,9 +202,6 @@
                                 <div class="card-details">
                                     <p>Basic Cases Determining Trend Reversal </p>
                                     <span>Free</span>
-                                    <div class="info">
-                                        <span><i class="bi bi-people-fill"></i> 204.432</span>
-                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -223,9 +214,6 @@
                                 <div class="card-details">
                                     <p>Fibonacci Retracement and Extension</p>
                                     <span>Free</span>
-                                    <div class="info">
-                                        <span><i class="bi bi-people-fill"></i> 204.432</span>
-                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -238,9 +226,6 @@
                                 <div class="card-details">
                                     <p>Exponential Moving Average (EMA)</p>
                                     <span>Free</span>
-                                    <div class="info">
-                                        <span><i class="bi bi-people-fill"></i> 204.432</span>
-                                </div>
                                 </div>
                             </div>
                         </a>
@@ -253,9 +238,6 @@
                                 <div class="card-details">
                                     <p>RSI Indicator </p>
                                     <span>Free</span>
-                                    <div class="info">
-                                        <span><i class="bi bi-people-fill"></i> 204.432</span>
-                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -268,9 +250,6 @@
                                 <div class="card-details">
                                     <p>Money Management </p>
                                     <span>Free</span>
-                                    <div class="info">
-                                        <span><i class="bi bi-people-fill"></i> 204.432</span>
-                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -283,9 +262,6 @@
                                 <div class="card-details">
                                     <p>Trading Psychology </p>
                                     <span>Free</span>
-                                    <div class="info">
-                                        <span><i class="bi bi-people-fill"></i> 204.432</span>
-                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -298,9 +274,6 @@
                                 <div class="card-details">
                                     <p>Trading Plan </p>
                                     <span>Free</span>
-                                    <div class="info">
-                                        <span><i class="bi bi-people-fill"></i> 204.432</span>
-                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -319,42 +292,53 @@
 
                             <div class="slick-testimonial">
                                 <div class="slick-testimonial-caption">
-                                    <p class="lead">Over three years in business, We’ve had the chance to work on a variety of projects, with companies Lorem ipsum dolor sit amet</p>
+                                    <p class="lead">RealProfit has been a game-changer for my trading. Their courses are easy to follow, 
+                                        and I've already seen a positive impact on my portfolio.
+                                    </p>
 
                                     <div class="slick-testimonial-client d-flex align-items-center mt-4">
-                                        <img src="" class="img-fluid custom-circle-image me-3" alt="">
+                                        <img src="images/nhan-nho-customer.jpg" class="img-fluid custom-circle-image me-3" alt="">
 
-                                        <span>George, <strong class="text-muted">Digital Art Fashion</strong></span>
+                                        <span>VuTuanHai <i class="bi bi-caret-right-fill"></i> <strong class="text-muted">University Student</strong></span>
                                     </div>
                                 </div>
 
                                 <div class="slick-testimonial-caption">
-                                    <p class="lead">Over three years in business, We’ve had the chance to work on a variety of projects, with companies Lorem ipsum dolor sit amet</p>
+                                    <p class="lead">RealProfit's trading education is solid.  
+                                        They break down complex concepts into lessons that are digestible, 
+                                        and the platform is easy to navigate. 
+                                         Definitely worth checking out if you're looking to improve your trading skills.
+                                    </p>
 
                                     <div class="slick-testimonial-client d-flex align-items-center mt-4">
-                                        <img src="" class="img-fluid custom-circle-image me-3" alt="">
+                                        <img src="images/pen-10-customer.jpg" class="img-fluid custom-circle-image me-3" alt="">
 
-                                        <span>Sandar, <strong class="text-muted">Zoom Fashion Idea</strong></span>
+                                        <span>NguyenVietMinhDuc <i class="bi bi-caret-right-fill"></i> <strong class="text-muted">Newbie Trader</strong></span>
                                     </div>
                                 </div>
 
                                 <div class="slick-testimonial-caption">
-                                    <p class="lead">Over three years in business, We’ve had the chance to work on a variety of projects, with companies Lorem ipsum dolor sit amet</p>
+                                    <p class="lead">I was hesitant at first, but RealProfit's focus on practical strategies, 
+                                        easy-to-understand lessons and risk management is impeccable. 
+                                        Highly recommend for anyone who are trading newbies.
+                                    </p>
 
                                     <div class="slick-testimonial-client d-flex align-items-center mt-4">
-                                        <img src="" class="img-fluid custom-circle-image me-3" alt="">
+                                        <img src="images/mike-2eyes-customer.png" class="img-fluid custom-circle-image me-3" alt="">
 
-                                        <span>Marie, <strong class="text-muted">Art Fashion Design</strong></span>
+                                        <span>CaoPhuongDang <i class="bi bi-caret-right-fill"></i><strong class="text-muted">Korean Student</strong></span>
                                     </div>
                                 </div>
 
                                 <div class="slick-testimonial-caption">
-                                    <p class="lead">Over three years in business, We’ve had the chance to work on a variety of projects, with companies Lorem ipsum dolor sit amet</p>
+                                    <p class="lead">RealProfit really changed my perspective on cryptocurrency and trading. 
+                                        Props to the creators for making such an easily accessible yet engaging web and lessons.
+                                    </p>
 
                                     <div class="slick-testimonial-client d-flex align-items-center mt-4">
-                                        <img src="" class="img-fluid custom-circle-image me-3" alt="">
+                                        <img src="images/jerrry-blah-customer.jpg" class="img-fluid custom-circle-image me-3" alt="">
 
-                                        <span>Catherine, <strong class="text-muted">Dress Fashion</strong></span>
+                                        <span>NguyenDuyHai <i class="bi bi-caret-right-fill"></i><strong class="text-muted">KingOfGamble</strong></span>
                                     </div>
                                 </div>
                             </div>
@@ -431,6 +415,24 @@
             </div>
         </footer>
 
+        <!-- MODAL FOR LOGIN CONDITION -->
+        <div class="modal hide">
+            <div class="modal_inner">
+                <div class="modal_header">
+                    <h2>You are not log in!</h2>
+                </div>
+                <div class="modal_body">
+                    <p>Please log in to access lessons !</p>
+                </div>
+                <div class="modal_footer">
+                    <button class="close-modal-btn">Cancel</button>
+                    <a href="loginbox.html">
+                        <button class="login-btn">Login</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
@@ -438,8 +440,11 @@
         <script src="js/jQuery.headroom.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/custom.js"></script>
-        <script src="js/chatbot.js"></script>
-        <script src="js/login.js"></script>
+        <script src="js/bot.js"></script>
+        <script src="js/modal.js"></script>
+
+        <script src="js/lesson_access.js"></script>
+        <script src="js/progess.js"></script>
 
     </body>
 </html>

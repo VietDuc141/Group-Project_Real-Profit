@@ -116,3 +116,62 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+/* MODAL LEARNING */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(0,0,0,0.6);
+}
+
+.modal.show{
+    display: block;
+}
+
+.modal_inner {
+    width: 500px;
+    position: relative;
+    top: 30%;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+}
+
+.modal_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.modal_body {
+    padding: 10px;
+}
+
+.modal_footer {
+    padding: 10px;
+    text-align: right;
+}
+
+.modal_footer button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    background: var(--primary-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.modal_footer button:hover {
+    transform: scale(0.9);
+}
+
+.hide {
+    display: none;
+}
