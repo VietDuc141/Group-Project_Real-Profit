@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Lesson6 Page</title>
+        <title>Lesson8 Page</title>
 
         <!-- CSS FILES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -120,8 +120,8 @@
                             <i class="bi bi-arrow-left"></i>
                             Back
                         </a>
-                        <h1>Lesson 6 </h1>
-                        <p>Fibonacci Retracement and Extension</p>
+                        <h1>Lesson 8 </h1>
+                        <p>RSI Indicator</p>
                         <h3>What will you get ?</h3>
                         <ul class="course-benefits">
                             <li><i class="bi bi-check-lg"></i> Basic knowledge, foundation of Trading industry</li>
@@ -136,143 +136,101 @@
                             <div class="chapter">
                                 <div class="chapter-header" onclick="toggleChapter(this)">
                                     <span class="toggle-symbol">+</span>
-                                    <span class="chapter-title">1. Definition.</span>
+                                    <span class="chapter-title">1. What is RSI Indicator ?</span>
                                 </div>
                                 <div class="lesson-content">
-                                    <p><span>* DEFINITION:</span></p>
-                                    <p>- The Fibonacci indicator was first introduced to the West in 
-                                        the 13th century by Leonardo Pisano Bogollo, an Italian mathematician.
+                                    <p>- <span>Relative Strength Index (RSI)</span> is an oscillator used to measure 
+                                        the market's momentum between two extremes: <span>Overbought</span> and 
+                                        <span>Oversold</span> conditions.
                                     </p>
-                                    <p>- This sequence exhibits mathematical properties and ratios found in nature, such as in architecture and biology. 
-                                        Because Fibonacci appears universally throughout the universe, it is also present in financial markets.
-                                    </p>
-                                    <p>- This is one of the reasons traders use the Fibonacci sequence in stocks, Forex, and Crypto to 
-                                        identify reversal points, set profit targets, and execute Fibonacci-based trading strategies.
-                                    </p>
-                                    <p><span>* There are two main Fibonacci tools that traders commonly use in trading:</span></p>
-                                    <ul>
-                                        <li style="list-style: decimal;">
-                                            <p><span>Purpose:</span>
-                                                To identify retracement levels of a trend. Based on personal experience, 
-                                                the key levels to focus on are <span>0.5 and 0.168.</span>
-                                            </p>
-                                        </li>
-                                        <li style="list-style: decimal;">
-                                            <p><span>Purpose:</span>
-                                                To find profit-taking points. The key levels to pay attention to are <span>0.5, 1, and 1.618.</span>
-                                            </p>
-                                        </li>
-                                    </ul>
+                                    <p><span>* RSI Setup:</span> Use a <span>9-period RSI</span> setting.</p>
                                 </div>
                             </div>
                           
                             <div class="chapter">
                                 <div class="chapter-header" onclick="toggleChapter(this)">
                                     <span class="toggle-symbol">+</span>
-                                    <span class="chapter-title">2. HOW TO DRAW FIBONACCI RETRACEMENT ?</span>
+                                    <span class="chapter-title">2. How to Use RSI in Combination with Trends ?</span>
                                 </div>
                                 <div class="lesson-content">
                                     <ul>
                                         <li style="list-style: decimal;">
-                                            <p><span>For an Uptrend:</span></p>
-                                            <p>- After the completion of an upward wave, a downward wave (correction wave) begins. 
-                                                Use the Fibonacci Retracement tool to draw from the <span>Bottom</span> of the wave 
-                                                to the <span>Top</span> of the previous upward wave.
-                                            </p>
+                                            <p><span>In an Uptrend:</span></p>
+                                            <ul>
+                                                <li>Once a price correction zone is identified, look for an <span>Entry Long</span> to follow the uptrend.</li>
+                                                <li>Pay attention to the RSI dropping below the <span>Oversold zone (30 or lower).</span></li>
+                                                <li>This is an excellent signal, significantly increasing the probability of a winning Long trade.</li>
+                                            </ul>
                                         </li>
                                         <li style="list-style: decimal;">
-                                            <p><span>For a Downtrend:</span></p>
-                                            <p>- Reverse the process. Draw the Fibonacci Retracement from the <span>Top</span> of the wave to the 
-                                                <span>Bottom</span> of the previous downward wave.
-                                            </p>
-                                        </li>
-                                    </ul>
-
-                                    <p><span>* UPWARD TREND:</span> To draw Fibonacci Retracement in an upward trend, connect three points:</p>
-                                    <ul>
-                                        <li style="list-style: decimal;">
-                                            <p><span>Point 1:</span> The bottom of the upward wave (start of the wave).</p>
-                                        </li>
-                                        <li style="list-style: decimal;">
-                                            <p><span>Point 2:</span> The top of the upward wave (end of the wave).</p>
-                                        </li>
-                                        <li style="list-style: decimal;">
-                                            <p><span>Point 3:</span> The bottom of the retracement wave (start of the correction).</p>
-                                        </li>
-                                    </ul>
-
-                                    <p><span>* DOWNWARD TREND:</span> For a downward trend, follow the opposite approach:</p>
-                                    <ul>
-                                        <li style="list-style: decimal;">
-                                            <p><span>Point 1:</span> The top of the downward wave (start of the wave).</p>
-                                        </li>
-                                        <li style="list-style: decimal;">
-                                            <p><span>Point 2:</span> The bottom of the downward wave (end of the wave).</p>
-                                        </li>
-                                        <li style="list-style: decimal;">
-                                            <p><span>Point 3:</span> The top of the retracement wave (start of the correction).</p>
+                                            <p><span>In a Downtrend:</span></p>
+                                            <ul>
+                                                <li>Once a price correction zone is identified, look for an <span>Entry Short</span> to follow the downtrend.</li>
+                                                <li>Pay attention to the RSI rising above the <span>Overbought zone (70 or higher).</span></li>
+                                                <li>This is a strong signal, improving the odds of a successful Short trade.</li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-
+                            </div>   
+                            
                             <div class="chapter">
                                 <div class="chapter-header" onclick="toggleChapter(this)">
                                   <span class="toggle-symbol">+</span>
                                   <span class="chapter-title" style="color: red;"><i class="bi bi-pen-fill"></i> Quiz.</span>
                                 </div>
                                 <div class="lesson-content lesson-ques" id="quiz">
-                                    <h3>Question: Fibonacci Retracement and Extension.</h3>
+                                    <h3>Question: RSI Indicator.</h3>
                                     
                                     <!-- Question 1 -->
                                     <div class="question">
-                                        <p><strong>1. Who introduced the Fibonacci indicator to the West?</strong></p>
-                                        <label><input type="radio" name="q1" value="wrong"> Isaac Newton</label><br>
-                                        <label><input type="radio" name="q1" value="wrong"> Galileo Galilei</label><br>
-                                        <label><input type="radio" name="q1" value="wrong"> Albert Einstein</label><br>
-                                        <label><input type="radio" name="q1" value="correct"> Leonardo Pisano Bogollo</label><br>
+                                        <p><strong>1. What does the Relative Strength Index (RSI) measure?</strong></p>
+                                        <label><input type="radio" name="q1" value="correct"> The market's momentum between Overbought and Oversold conditions</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> The market's volume</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> The price's resistance level</label><br>
+                                        <label><input type="radio" name="q1" value="wrong"> The time taken for price corrections</label><br>
                                     </div>
 
                                     <!-- Question 2 -->
                                     <div class="question">
-                                        <p><strong>2. What is the primary purpose of the Fibonacci Retracement tool?</strong></p>
-                                        <label><input type="radio" name="q2" value="wrong"> To calculate the moving average</label><br>
-                                        <label><input type="radio" name="q2" value="wrong"> To determine volume levels</label><br>
-                                        <label><input type="radio" name="q2" value="wrong"> To predict market news</label><br>
-                                        <label><input type="radio" name="q2" value="correct"> To identify retracement levels of a trend</label><br>
+                                        <p><strong>2. What RSI period is recommended for setup?</strong></p>
+                                        <label><input type="radio" name="q2" value="correct"> 9-period</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> 14-period</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> 20-period</label><br>
+                                        <label><input type="radio" name="q2" value="wrong"> 50-period</label><br>
                                     </div>
 
                                     <!-- Question 3 -->
                                     <div class="question">
-                                        <p><strong>3. How do you draw Fibonacci Retracement for an upward trend?</strong></p>
-                                        <label><input type="radio" name="q3" value="correct"> From the bottom of the upward wave to the top of the upward wave</label><br>
-                                        <label><input type="radio" name="q3" value="wrong"> From the top of the wave to the bottom of the correction wave</label><br>
-                                        <label><input type="radio" name="q3" value="wrong"> From the middle of the upward wave to the correction wave</label><br>
-                                        <label><input type="radio" name="q3" value="wrong"> From the top of the upward wave to the previous trendline</label><br>
+                                        <p><strong>3. In an uptrend, what RSI condition provides a strong signal for a Long entry?</strong></p>
+                                        <label><input type="radio" name="q3" value="wrong"> RSI rising above the Overbought zone (70 or higher)</label><br>
+                                        <label><input type="radio" name="q3" value="correct"> RSI dropping below the Oversold zone (30 or lower)</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> RSI remaining neutral (50)</label><br>
+                                        <label><input type="radio" name="q3" value="wrong"> RSI crossing above 100</label><br>
                                     </div>
 
                                     <!-- Question 4 -->
                                     <div class="question">
-                                        <p><strong>4. Which key Fibonacci levels are typically used to find profit-taking points?</strong></p>
-                                        <label><input type="radio" name="q4" value="wrong"> 0.5, 0.168, and 0.236</label><br>
-                                        <label><input type="radio" name="q4" value="correct"> 0.5, 1, and 1.618</label><br>
-                                        <label><input type="radio" name="q4" value="wrong"> 1, 2, and 3</label><br>
-                                        <label><input type="radio" name="q4" value="wrong"> 0.618, 0.786, and 1.236</label><br>
+                                        <p><strong>4. In a downtrend, what RSI condition signals a good opportunity for a Short entry?</strong></p>
+                                        <label><input type="radio" name="q4" value="wrong"> RSI dropping below the Oversold zone (30 or lower)</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> RSI remaining neutral (50)</label><br>
+                                        <label><input type="radio" name="q4" value="correct"> RSI rising above the Overbought zone (70 or higher)</label><br>
+                                        <label><input type="radio" name="q4" value="wrong"> RSI crossing below 0</label><br>
                                     </div>
 
                                     <!-- Question 5 -->
                                     <div class="question">
-                                        <p><strong>5. What are the three points used to draw Fibonacci Retracement for a downward trend?</strong></p>
-                                        <label><input type="radio" name="q5" value="wrong"> Bottom of the downward wave, top of the retracement wave, and middle of the wave</label><br>
-                                        <label><input type="radio" name="q5" value="wrong"> Top of the retracement wave, middle of the downward wave, and bottom of the wave</label><br>
-                                        <label><input type="radio" name="q5" value="correct"> Top of the downward wave, bottom of the downward wave, and top of the retracement wave</label><br>
-                                        <label><input type="radio" name="q5" value="wrong"> Bottom of the downward wave, middle of the wave, and top of the wave</label><br>
+                                        <p><strong>5. What is the main role of RSI in combination with trends?</strong></p>
+                                        <label><input type="radio" name="q5" value="wrong"> To predict exact price levels</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> To replace other technical indicators</label><br>
+                                        <label><input type="radio" name="q5" value="wrong"> To determine support and resistance zones</label><br>
+                                        <label><input type="radio" name="q5" value="correct"> To identify key entry points in correction zones</label><br>
                                     </div>
 
                                     <button class="finish-btn" onclick="finishQuiz()">Finish</button>
                                 
                                     <p class="warning"><i class="bi bi-x-circle-fill"></i> Please answer all questions correctly before proceeding!</p>
-                                    <p class="success"><i class="bi bi-check-circle-fill"></i> Congratulations! Moving to Lesson 7...</p>
+                                    <p class="success"><i class="bi bi-check-circle-fill"></i> Congratulations! Moving to Lesson 9...</p>
                                 </div>
                             </div>
                         </section>
@@ -281,15 +239,15 @@
                 
                     <!-- Right Section -->
                     <div class="course-summary">
-                        <div class="course-pic" style="background-image: url(images/bg-lesson-s-6.jpg);">
-                            <span>Fibonacci Retracement <br> and Extension</span>
+                        <div class="course-pic" style="background-image: url(images/bg-lesson-s-7.jpg);">
+                            <span>RSI Indicator</span>
                         </div>
-                    <h2>Free</h2>
-                    <ul class="course-details">
-                        <li><i class="bi bi-check-all"></i> From new to pro</li>
-                        <li><i class="bi bi-check-all"></i> Total: 11 lessons</li>
-                        <li><i class="bi bi-check-all"></i> Learn everytime - everywhere</li>
-                    </ul>
+                        <h2>Free</h2>
+                        <ul class="course-details">
+                            <li><i class="bi bi-check-all"></i> From new to pro</li>
+                            <li><i class="bi bi-check-all"></i> Total: 11 lessons</li>
+                            <li><i class="bi bi-check-all"></i> Learn everytime - everywhere</li>
+                        </ul>
                     </div>
                 </div>
                 </section>
@@ -353,5 +311,9 @@
         <script src="js/chatbot.js"></script>
         <script src="js/login.js"></script>
         
+        <script src="js/lesson_access.js"></script>
+        <script src="js/progess.js"></script>
+
+        <script src="js/check_lesson_access.js"></script>
     </body>
 </html>

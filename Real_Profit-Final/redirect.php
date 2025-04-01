@@ -8,7 +8,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 // Database connection (change credentials as per your database setup)
 $servername = "localhost";
 $username = "root"; 
-$password = "coolguy27122004";     
+$password = "";     
 $dbname = "my_web_db";  
 
 // Create connection

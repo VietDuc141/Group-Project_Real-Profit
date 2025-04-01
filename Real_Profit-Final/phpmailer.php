@@ -8,7 +8,7 @@ require 'vendor/autoload.php'; // Load Composer autoloader
 // Database connection (update with your database details)
 $servername = "localhost";
 $username = "root";
-$password = "coolguy27122004";
+$password = "";
 $dbname = "my_web_db";
 
 // Create a connection to the database

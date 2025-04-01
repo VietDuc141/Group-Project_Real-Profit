@@ -1,4 +1,3 @@
-const profileText = document.getElementById('profile-text');
 const courseLinks = document.querySelectorAll('.course-link');
 const modal = document.querySelector('.modal');
 const closeModalBtn = document.querySelector('.close-modal-btn');
@@ -13,7 +12,9 @@ function hideModal() {
 
 courseLinks.forEach(courseLink => {
   courseLink.addEventListener('click', function (e) {
-    if (profileText.textContent.trim() === 'Login') {
+    const dropdownLogItem = document.querySelector('.dropdown-log .dropdown-item-log');
+
+    if (dropdownLogItem && dropdownLogItem.textContent.trim() === 'Login') {
       e.preventDefault();
       showModal();
     }
